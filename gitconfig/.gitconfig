@@ -1,0 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = sjw.sars@student.avans.nl
+	anem = Seger01
+	name = Seger01
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[core]
+	pager = bat
