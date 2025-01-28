@@ -113,6 +113,8 @@ alias v="nvim"
 alias i="sudo pacman -Sy " 
 alias e="evince " 
 
+alias sudogui="sudo -E "
+
 alias background="~/.config/wallpapers/randombackground.sh 0" 
 
 alias dushs="sudo du * -sh | sort -h" 
@@ -123,7 +125,6 @@ alias swindowsvm='VBoxManage startvm "WindowsVM"'
 export PATH=$PATH:~/bin
 
 export EDITOR='nvim'
-
 export PAGER='bat'
 
 export QT_QPA_PLATFORMTHEME=qt5ct

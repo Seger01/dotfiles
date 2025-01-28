@@ -1,3 +1,6 @@
 [submodule "neovim/.config/nvim"]
 	path = neovim/.config/nvim
 	url = https://github.com/Seger01/NeovimConfig.git
+[submodule "bat/.config/bat/themes/gruvbox-material-bat"]
+	path = bat/.config/bat/themes/gruvbox-material-bat
+	url = https://github.com/molchalin/gruvbox-material-bat
