@@ -14,3 +14,5 @@
 	rebase = false
 [core]
 	pager = bat
+[init]
+	defaultBranch = main

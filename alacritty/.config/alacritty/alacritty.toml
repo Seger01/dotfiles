@@ -52,8 +52,8 @@ family = "Sauce Code Pro Nerd Font"
 style = "Light Italic"
 
 [font.normal]
-family = "Sauce Code Pro Nerd Font"
-style = "normal"
+family = "SauceCodePro NFM"
+style = "SemiBold"
 
 [font.glyph_offset]
 x = 0
