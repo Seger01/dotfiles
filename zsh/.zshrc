@@ -122,7 +122,7 @@ alias dushas="sudo du .* * -sh | sort -h"
 
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
 export EDITOR='nvim'
 export PAGER='bat'
@@ -138,6 +138,10 @@ mkcd() {
     cd "${1}"
 }
 
+# if test -f "/tools/tool_setup.sh"; then 
+#     source /tools/tool_setup.sh 
+# else 
+#     echo "Remote installs is not mounted!" 
+# fi 
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/seger/.lmstudio/bin"
+alias sviva="~/bin/start_vivado_2024.sh"

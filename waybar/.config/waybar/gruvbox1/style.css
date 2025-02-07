@@ -1,13 +1,12 @@
 @define-color base #282828;
-@define-color foreground #ddc7a1;
-@define-color cyan #7daea3;
-@define-color green #a9b665;
-@define-color orange #e78a4e;
-@define-color purple #d3869b;
-@define-color red #ea6962;
-@define-color yellow #d8a657;
-
-@define-color pink #FFFFFF;
+@define-color foreground #ebdbb2;
+@define-color cyan #83a598;
+@define-color green #8ec07c;
+@define-color orange #fe8019;
+@define-color pink #d3869b;
+@define-color purple #b16286;
+@define-color red #fb4934;
+@define-color yellow #fabd2f;
 
 * {
   font-family: "SauceCodePro Nerd Font Regular", sans-serif; 
@@ -20,7 +19,7 @@
   color: @pink;
   background: @base;
   transition-property: background-color;
-  border-radius: 100px;
+  border-radius: 0px;
   padding: 0 10px;
 }
 
@@ -47,7 +46,7 @@ button {
   margin-right: 5px;
   /* Avoid rounded borders under each button name */
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   background: @base;
   box-shadow: none;
   text-shadow: none;
@@ -61,9 +60,9 @@ button:hover {
 }
 
 #workspaces {
-  border-radius: 20px;
+  border-radius: 100px;
   background: @base;
-  padding: 0 12px;
+  padding: 0 15px;
 }
 
 #workspaces button {
@@ -72,7 +71,7 @@ button:hover {
   color: @foreground;
   transition: 0.2s;
   padding-left: 0;
-  padding-right: 0px;
+  padding-right: 4px;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -83,21 +82,12 @@ button:hover {
   transition: 0.2s;
 }
 
-#workspaces button.urgent {
-  color: @red;
+#workspaces button.focused {
+  background: @base;
 }
 
-/* #workspaces button.focused { */
-/*     background-color: rgba(0, 0, 0, 0.3); */
-/*     color: @orange; */
-/*     border-top: 2px solid @orange; */
-/* } */
-
-#workspaces button.active {
-    background-color: rgba(1, 1, 1, 1.0);
-    /* color: @orange; */
-    /* border-top: 2px solid @cyan; */
-    border-bottom: 3px solid @cyan;
+#workspaces button.urgent {
+  color: @red;
 }
 
 #mode {
@@ -133,7 +123,7 @@ button:hover {
 
 #window,
 #workspaces {
-  margin: 0 2px;
+  margin: 0 5px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -155,12 +145,12 @@ button:hover {
 }
 
 #battery {
-  color: @cyan;
+  color: @purple;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @cyan;
+  color: @orange;
 }
 
 @keyframes blink {
@@ -188,7 +178,7 @@ label:focus {
 }
 
 #memory {
-  color: @green;
+  color: @purple;
 }
 
 #disk {
@@ -208,7 +198,7 @@ label:focus {
 }
 
 #pulseaudio {
-  color: @red;
+  color: @cyan;
 }
 
 #pulseaudio.muted {
@@ -216,7 +206,7 @@ label:focus {
 }
 
 #wireplumber {
-  color: @red;
+  color: @cyan;
 }
 
 #wireplumber.muted {
