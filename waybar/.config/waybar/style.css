@@ -94,7 +94,7 @@ button:hover {
 /* } */
 
 #workspaces button.active {
-    background-color: rgba(1, 1, 1, 1.0);
+    /* background-color: rgba(1, 1, 1, 1.0); */
     /* color: @orange; */
     /* border-top: 2px solid @cyan; */
     border-bottom: 3px solid @cyan;
@@ -171,12 +171,12 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-  background-color: @red;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  background-color: @foreground;
+  /* animation-name: blink; */
+  /* animation-duration: 0.5s; */
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
 }
 
 label:focus {
