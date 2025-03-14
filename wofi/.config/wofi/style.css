@@ -1,0 +1,105 @@
+window {
+  margin: 0px;
+  border: 0px none #ebdbb2;
+  border-width: 1px;
+  background-color: #282828;
+  border-radius: 0px;
+}
+
+#input {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 5px;
+  border: none;
+  border-width: 0px;
+  color: #ebdbb2;
+  font-family: Sauce Code Pro Nerd Font;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: none;
+  /* background: ; */
+  outline: none;
+  border-radius: 0px;
+  margin: 5px 5px;
+  margin-bottom: 2px;
+}
+
+#input:focus {
+  border: 0px solid transparent;
+  margin-bottom: 0px;
+}
+
+#inner-box {
+  margin: 0px;
+  border: 0px solid transparent;
+  color: #ebdbb2;
+  font-weight: normal;
+  background-color: transparent;
+  /* background-color: red; */
+  border-radius: 4px;
+}
+
+#outer-box {
+  margin: 0px;
+  border: 1px solid #E78A4E;
+  border-radius: 0px;
+  background-color: #282828;
+}
+
+#scroll {
+  background-color: transparent;
+  margin-top: 0px;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+#img {
+  margin-right: 10px;
+}
+
+#img:selected {
+  background-color: none;
+  margin-right: 10px;
+  border-radius: 0px;
+}
+
+#img:unselected {
+  background-color: transparent;
+  margin-right: 10px;
+  border-radius: 0px;
+}
+
+#text:selected {
+  color: #ebdbb2;
+  margin: 0px 0px;
+  border: none;
+  border-color: #EA6962;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+#text:unselected {
+  color: #ebdbb2;
+  margin: 0px 0px;
+  border: none;
+  border-color: #ebdbb2;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+#entry {
+  margin: 0px 0px;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+#entry:selected {
+  margin: 0px 0px;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
