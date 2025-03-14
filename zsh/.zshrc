@@ -122,6 +122,8 @@ alias dushas="sudo du .* * -sh | sort -h"
 
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
+alias flushswap='sudo swapoff -a && sudo swapon -a'
+
 export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
 export EDITOR='nvim'
@@ -137,11 +139,3 @@ mkcd() {
     mkdir -p "${1}"
     cd "${1}"
 }
-
-# if test -f "/tools/tool_setup.sh"; then 
-#     source /tools/tool_setup.sh 
-# else 
-#     echo "Remote installs is not mounted!" 
-# fi 
-
-alias sviva="~/bin/start_vivado_2024.sh"

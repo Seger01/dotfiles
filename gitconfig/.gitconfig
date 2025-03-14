@@ -1,18 +1,25 @@
 [credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+    helper = 
+    helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+    helper = 
+    helper = !/usr/bin/gh auth git-credential
 [user]
-	email = sjw.sars@student.avans.nl
-	anem = Seger01
-	name = Seger01
+    email = sjw.sars@student.avans.nl
+    anem = Seger01
+    name = Seger01
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 [pull]
-	rebase = false
+    rebase = false
 [core]
-	pager = bat
+    pager = bat
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log
