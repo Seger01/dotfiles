@@ -124,7 +124,9 @@ alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
 alias flushswap='sudo swapoff -a && sudo swapon -a'
 
-export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+alias spt="spotify_player"
+
+export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
 
 export EDITOR='nvim'
 export PAGER='bat'
