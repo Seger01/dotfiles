@@ -15,7 +15,7 @@
 col_bg="#282828"
 col_bg0_h="#1d2021"
 col_bg0="#1d2021"
-col_bg1="#282828"
+col_bg1="#FFFFFF" # line between panes
 col_bg2="#282828"
 col_bg3="#3c3836"
 col_bg4="#3c3836"
