@@ -124,7 +124,7 @@ alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
 alias flushswap='sudo swapoff -a && sudo swapon -a'
 
-export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
 
 export EDITOR='nvim'
 export PAGER='bat'
@@ -133,7 +133,6 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORM=wayland
 
 export XDG_CURRENT_DESKTOP=hyprland
-
 
 mkcd() {
     mkdir -p "${1}"
