@@ -58,7 +58,7 @@ theme_set_dark() {
   tmux_append_seto "status-right-length" "80"
   tmux_append_setwo "window-status-separator" ""
 
-  tmux_append_seto "status-left" "#[bg=${col_aqua},fg=${col_bg2}] ${_left_status_a} #[bg=${col_bg2},fg=${col_aqua},nobold,noitalics,nounderscore]"
+  tmux_append_seto "status-left" "#[bg=${col_green},fg=${col_bg2}] ${_left_status_a} #[bg=${col_bg2},fg=${col_green},nobold,noitalics,nounderscore]"
 
   # right status
   local _status_right_bg=${col_bg2}

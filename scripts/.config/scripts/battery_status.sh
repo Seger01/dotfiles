@@ -21,4 +21,8 @@ if [[ ("$status" == "Discharging") || ("$status" == "Full") ]]; then
   fi
 elif [[ "$status" == "Charging" ]]; then
   printf " $level"
+elif [[ "$status" == "Not charging" ]]; then
+  printf " $level"
+else
+  printf " $level"
 fi
