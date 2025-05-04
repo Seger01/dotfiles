@@ -18,8 +18,10 @@
     defaultBranch = main
 [alias]
     st = status
+    cl = clean -fdx
     ci = commit
     br = branch
     co = checkout
     df = diff
     lg = log
+    npdiff = !git --no-pager diff

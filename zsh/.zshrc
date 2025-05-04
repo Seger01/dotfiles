@@ -140,3 +140,17 @@ mkcd() {
     mkdir -p "${1}"
     cd "${1}"
 }
+
+not(){
+    start=$(date +%s)
+    "$@"
+    [ $(($(date +%s) - start)) -le 1 ] || notify-send "Notification" "Long\
+ running command \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish" 
+}
+
+notcrit(){
+    start=$(date +%s)
+    "$@"
+    [ $(($(date +%s) - start)) -le 1 ] || notify-send -u critical "Critical Notification" "Long\
+ running command \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish" 
+}
