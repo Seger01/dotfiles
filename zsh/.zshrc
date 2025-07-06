@@ -107,7 +107,7 @@ eval "$(starship init zsh)"
 
 source <(fzf --zsh)
 
-alias f="source ~/.config/startfuzzyfinder.sh" 
+alias f="source ~/.config/scripts/startfuzzyfinder.sh" 
 alias r="ranger "
 alias v="nvim" 
 alias i="sudo pacman -Sy " 
