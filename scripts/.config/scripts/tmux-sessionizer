@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$( (find ~/projects ~/personal -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf)
+    selected=$( (find ~/projects -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf)
 fi
 
 if [[ -z $selected ]]; then exit 0
@@ -14,20 +14,24 @@ tmux_running=$(pgrep tmux)
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
     echo "Starting tmux"
+
+    tmux new-session -ds "$selected_name" -c "$selected" -n editor "nvim .; zsh"
+    tmux new-window -t "$selected_name:" -n run -c "$selected"
+    tmux new-window -t "$selected_name:" -n shell -c "$selected"
     tmux new-session -s $selected_name -c $selected
-    # # Check if the session already exists
-    # tmux has-session -t "$SESSION" 2>/dev/null
-    # Create a new detached session with the first window named 'editor'
-    # start the window with vim
+    # # # Check if the session already exists
+    # # tmux has-session -t "$SESSION" 2>/dev/null
+    # # Create a new detached session with the first window named 'editor'
+    # # start the window with vim
+    # #
+    # # set the session name
+    # SESSION=$selected_name
     #
-    # set the session name
-    SESSION=$selected_name
-
-    tmux new-window -t "$SESSION:1" -n nvim -c $SESSION remain-on-exit "nvim ."
-
-    tmux new-window -t "$SESSION:2" -n run -c $SESSION
-
-    tmux new-window -t "$SESSION:3" -n shell -c $SESSION
+    # tmux new-window -t "$SESSION:1" -n nvim -c $SESSION remain-on-exit "nvim ."
+    #
+    # tmux new-window -t "$SESSION:2" -n run -c $SESSION
+    #
+    # tmux new-window -t "$SESSION:3" -n shell -c $SESSION
  
     tmux select-window -t "$SESSION:1"
 
@@ -53,3 +57,19 @@ if ! tmux has-session -t=$selected_name 2> /dev/null; then
 fi
 
 tmux switch-client -t $selected_name
+
+# if [[ $# -eq 1 ]]; then
+#     selected=$1
+# else
+#     selected=$( (find ~/projects -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf)
+# fi
+#
+# if [[ -z $selected ]]; then exit 0; fi
+#
+# selected_name=$(basename "$selected" | tr . _)
+#
+# if ! tmux has-session -t "$selected_name" 2>/dev/null; then
+#     echo "Creating new session"
+#     tmux select-window -t "$SESSION:1"
+# fi
+#
