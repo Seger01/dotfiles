@@ -12,13 +12,13 @@
     "modules-left": [
         "hyprland/workspaces"
     ],
-    "modules-center": [
-        "hyprland/window"
-    ],
+    // "modules-center": [
+    //     "hyprland/window"
+    // ],
     "modules-right": [
         "wireplumber",
-        "cpu",
-        "memory",
+        // "cpu",
+        // "memory",
         "battery",
         "clock"
     ],
@@ -164,6 +164,7 @@
         ]
     },
     "battery": {
+        "interval": 5,
         "states": {
             // "good": 95,
             "warning": 30,

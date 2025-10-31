@@ -108,32 +108,22 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 
 alias f="source ~/.config/scripts/startfuzzyfinder.sh" 
-alias r="ranger "
-alias v="nvim" 
-alias i="sudo pacman -Sy " 
-alias e="evince " 
-
-alias sudogui="sudo -E "
+alias vim="nvim" 
+alias ls="eza --icons --group-directories-first" 
 
 alias background="~/.config/wallpapers/randombackground.sh 0" 
 
+alias sudogui="sudo -E "
 alias dushs="sudo du * -sh | sort -h" 
 alias dushas="sudo du .* * -sh | sort -h" 
-
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
-
-alias flushswap='sudo swapoff -a && sudo swapon -a'
-
-alias spt="spotify_player"
 
 export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
 
 export EDITOR='nvim'
 export PAGER='bat'
-
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORM=wayland
-
 export XDG_CURRENT_DESKTOP=hyprland
 
 mkcd() {
@@ -154,3 +144,9 @@ notcrit(){
     [ $(($(date +%s) - start)) -le 1 ] || notify-send -u critical "Critical Notification" "Long\
  running command \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish" 
 }
+
+alias cdure="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/"
+alias cdureme="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer "
+# smb://wtbfiler.campus.tue.nl/university%20racing/2025%20-%202026%20(URE20)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer/Documentation/log_book
+# /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025 - 2026 (URE20)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer/Documentation/log_book
+

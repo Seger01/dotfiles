@@ -5,7 +5,7 @@
     helper = 
     helper = !/usr/bin/gh auth git-credential
 [user]
-    email = sjw.sars@student.avans.nl
+	email = segersars@gmail.com
     anem = Seger01
     name = Seger01
 [push]
@@ -17,11 +17,6 @@
 [init]
     defaultBranch = main
 [alias]
-    st = status
-    cl = clean -fdx
-    ci = commit
-    br = branch
-    co = checkout
-    df = diff
-    lg = log
     npdiff = !git --no-pager diff
+[credential]
+	helper = store

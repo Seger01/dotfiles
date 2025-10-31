@@ -3,61 +3,86 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$( (find ~/projects -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf)
+    selected=$( (find ~/projects -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf )
 fi
 
-if [[ -z $selected ]]; then exit 0
-fi
-
-selected_name=$(basename "$selected" | tr . _)
-tmux_running=$(pgrep tmux)
-
-if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-    echo "Starting tmux"
-
-    tmux new-session -ds "$selected_name" -c "$selected" -n editor "nvim .; zsh"
-    tmux new-window -t "$selected_name:" -n run -c "$selected"
-    tmux new-window -t "$selected_name:" -n shell -c "$selected"
-    tmux new-session -s $selected_name -c $selected
-    # # # Check if the session already exists
-    # # tmux has-session -t "$SESSION" 2>/dev/null
-    # # Create a new detached session with the first window named 'editor'
-    # # start the window with vim
-    # #
-    # # set the session name
-    # SESSION=$selected_name
-    #
-    # tmux new-window -t "$SESSION:1" -n nvim -c $SESSION remain-on-exit "nvim ."
-    #
-    # tmux new-window -t "$SESSION:2" -n run -c $SESSION
-    #
-    # tmux new-window -t "$SESSION:3" -n shell -c $SESSION
- 
-    tmux select-window -t "$SESSION:1"
-
-    # Attach to the session
-    tmux attach-session -t "$SESSION"
+if [[ -z $selected ]]; then
     exit 0
 fi
 
-if ! tmux has-session -t=$selected_name 2> /dev/null; then
-    echo "Creating new session"
-    tmux new-session -ds $selected_name -c $selected -n editor "nvim .; zsh"
-    # set the session name
-    SESSION=$selected_name
+session_name=$(basename "$selected" | tr . _)
 
-    tmux new-window -t "$SESSION:2" -n run -c $selected
-
-    tmux new-window -t "$SESSION:3" -n shell -c $selected
-
-    tmux select-window -t "$SESSION:1"
-
-    # Attach to the session
-    tmux attach-session -t "$SESSION"
+# Check if the session already exists
+if tmux has-session -t="$session_name" 2>/dev/null; then
+    if [[ -n $TMUX ]]; then
+        tmux switch-client -t "$session_name"
+    else
+        tmux attach-session -t "$session_name"
+    fi
+    exit 0
 fi
 
-tmux switch-client -t $selected_name
+# Session doesn't exist, create it
+tmux new-session -ds "$session_name" -c "$selected" -n editor "nvim .; zsh"
+tmux new-window -t "$session_name:" -n run -c "$selected"
+tmux new-window -t "$session_name:" -n shell -c "$selected"
 
+# Always select the first window (index 1) before attaching
+tmux select-window -t "$session_name:1"
+
+if [[ -n $TMUX ]]; then
+    tmux switch-client -t "$session_name"
+else
+    tmux attach-session -t "$session_name"
+fi
+
+# #!/usr/bin/env bash
+#
+# if [[ $# -eq 1 ]]; then
+#     selected=$1
+# else
+#     selected=$( (find ~/projects -mindepth 1 -maxdepth 1 -type d; echo ~/.dotfiles; echo ~/Documents) | fzf)
+# fi
+#
+# if [[ -z $selected ]]; then exit 0
+# fi
+#
+# selected_name=$(basename "$selected" | tr . _)
+# tmux_running=$(pgrep tmux)
+#
+# if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+#     echo "Starting tmux"
+#
+#     tmux new-session -ds "$selected_name" -c "$selected" -n editor "nvim .; zsh"
+#     tmux new-window -t "$selected_name:" -n run -c "$selected"
+#     tmux new-window -t "$selected_name:" -n shell -c "$selected"
+#     tmux new-session -s $selected_name -c $selected
+#  
+#     tmux select-window -t "$SESSION:1"
+#
+#     # Attach to the session
+#     tmux attach-session -t "$SESSION"
+#     exit 0
+# fi
+#
+# if ! tmux has-session -t=$selected_name 2> /dev/null; then
+#     echo "Creating new session"
+#     tmux new-session -ds $selected_name -c $selected -n editor "nvim .; zsh"
+#     # set the session name
+#     SESSION=$selected_name
+#
+#     tmux new-window -t "$SESSION:2" -n run -c $selected
+#
+#     tmux new-window -t "$SESSION:3" -n shell -c $selected
+#
+#     tmux select-window -t "$SESSION:1"
+#
+#     # Attach to the session
+#     tmux attach-session -t "$SESSION"
+# fi
+#
+# tmux switch-client -t $selected_name
+#
 # if [[ $# -eq 1 ]]; then
 #     selected=$1
 # else
@@ -73,3 +98,28 @@ tmux switch-client -t $selected_name
 #     tmux select-window -t "$SESSION:1"
 # fi
 #
+# !/usr/bin/env bash
+#
+# if [[ $# -eq 1 ]]; then
+#     selected=$1
+# else
+#     selected=$(find ~/work/builds ~/projects ~/ ~/work ~/personal ~/personal/yt -mindepth 1 -maxdepth 1 -type d | fzf)
+# fi
+#
+# if [[ -z $selected ]]; then
+#     exit 0
+# fi
+#
+# selected_name=$(basename "$selected" | tr . _)
+# tmux_running=$(pgrep tmux)
+#
+# if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+#     tmux new-session -s $selected_name -c $selected
+#     exit 0
+# fi
+#
+# if ! tmux has-session -t=$selected_name 2> /dev/null; then
+#     tmux new-session -ds $selected_name -c $selected
+# fi
+#
+# tmux switch-client -t $selected_name
