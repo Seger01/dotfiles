@@ -23,7 +23,7 @@ if tmux has-session -t="$session_name" 2>/dev/null; then
 fi
 
 # Session doesn't exist, create it
-tmux new-session -ds "$session_name" -c "$selected" -n editor "nvim .; zsh"
+tmux new-session -ds "$session_name" -c "$selected" -n editor
 tmux new-window -t "$session_name:" -n run -c "$selected"
 tmux new-window -t "$session_name:" -n shell -c "$selected"
 
