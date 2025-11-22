@@ -1,13 +1,7 @@
-@define-color base #282828;
-@define-color foreground #ddc7a1;
-@define-color cyan #7daea3;
-@define-color green #a9b665;
-@define-color orange #e78a4e;
-@define-color purple #d3869b;
-@define-color red #ea6962;
-@define-color yellow #d8a657;
+@import "colors.css";
 
-@define-color pink #FFFFFF;
+@define-color base @surface_container;
+@define-color foreground @primary;
 
 * {
   font-family: "SauceCodePro Nerd Font Regular", sans-serif; 
@@ -31,17 +25,6 @@
 window#waybar {
   background-color: transparent;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-
-
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 button {
   margin-right: 5px;
@@ -87,12 +70,6 @@ button:hover {
   color: @red;
 }
 
-/* #workspaces button.focused { */
-/*     background-color: rgba(0, 0, 0, 0.3); */
-/*     color: @orange; */
-/*     border-top: 2px solid @orange; */
-/* } */
-
 #workspaces button.active {
     /* background-color: rgba(1, 1, 1, 1.0); */
     /* color: @orange; */
@@ -110,20 +87,7 @@ button:hover {
 #battery,
 #cpu,
 #memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
 #wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd,
-#language,
-#keyboard-state,
 #custom-power {
   padding-left: 15px;
   padding-right: 18px;
@@ -147,15 +111,11 @@ button:hover {
 }
 
 #clock {
-  color: @orange;
-}
-
-#temperature {
-  color: @orange;
+  color: @secondary;
 }
 
 #battery {
-  color: @cyan;
+  color: @tertiary_fixed_dim
 }
 
 #battery.charging,
@@ -171,12 +131,7 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-  background-color: @foreground;
-  /* animation-name: blink; */
-  /* animation-duration: 0.5s; */
-  /* animation-timing-function: linear; */
-  /* animation-iteration-count: infinite; */
-  /* animation-direction: alternate; */
+    background-color: @foreground;
 }
 
 label:focus {
@@ -191,128 +146,10 @@ label:focus {
   color: @green;
 }
 
-#disk {
-  color: @purple;
-}
-
-#backlight {
-  color: @yellow;
-}
-
-#network {
-  color: @pink;
-}
-
-#network.disconnected {
-  color: @red;
-}
-
-#pulseaudio {
-  color: @red;
-}
-
-#pulseaudio.muted {
-  color: @red;
-}
-
 #wireplumber {
-  color: @red;
+  color: @primary_fixed_dim;
 }
-
-#wireplumber.muted {
-  color: @red;
-}
-
-#custom-media {
-  color: @purple;
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  color: @purple;
-}
-
-#custom-media.custom-vlc {
-  color: @purple;
-}
-
-#temperature {
-  color: @purple;
-}
-
-#temperature.critical {
-  color: @base;
-  background: @red;
-  box-shadow: inset 0px 0px 0px 3px @base;
-}
-
-#tray {
-  color: @foreground;
-}
-
-#tray>.passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray>.needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: @base;
-}
-
-#tray * {
-  background: @base;
-}
-
-#idle_inhibitor {
-  color: @yellow;
-}
-
-#idle_inhibitor.activated {
-  background-color: @red;
-  box-shadow: inset 0px 0px 0px 3px @base;
-  color: @base;
-}
-
-#mpd {
-  color: @purple;
-}
-
-#mpd.disconnected {
-  background-color: @red;
-  color: @base;
-  box-shadow: inset 0px 0px 0px 3px @base;
-}
-
-#mpd.stopped {
-  color: @red;
-}
-
-#mpd.paused {
-  color: @yellow;
-}
-
-#language {
-  color: @orange;
-  min-width: 16px;
-}
-
-#keyboard-state {
-  color: @orange;
-  min-width: 16px;
-}
-
-#keyboard-state>label {
-  padding: 0 5px;
-}
-
-#keyboard-state>label.locked {
-  color: @red;
-}
-
-#scratchpad {
-  color: @yellow;
-}
-
-#scratchpad.empty {
-  color: @cyan;
-}
+/**/
+/* #wireplumber.muted { */
+/*   color: @red; */
+/* } */

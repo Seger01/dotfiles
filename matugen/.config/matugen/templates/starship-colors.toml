@@ -6,15 +6,15 @@
 #
 # [palettes.colors]
 # mustard = '#af8700' # example
-# color1 = '#c2cd7c'
-# color2 = '#2d3400'
-# color3 = '#c8c7b7'
-# color4 = '#212119'
-# color5 = '#2d3400'
-# color6 = '#13140d'
-# color7 = '#13140d'
-# color8 = '#c2cd7c'
-# color9 = '#a2d0c2'
+# color1 = '{{colors.primary_fixed_dim.default.hex}}'
+# color2 = '{{colors.on_primary.default.hex}}'
+# color3 = '{{colors.on_surface_variant.default.hex}}'
+# color4 = '{{colors.surface_container.default.hex}}'
+# color5 = '{{colors.on_primary.default.hex}}'
+# color6 = '{{colors.surface_dim.default.hex}}'
+# color7 = '{{colors.surface.default.hex}}'
+# color8 = '{{colors.primary.default.hex}}'
+# color9 = '{{colors.tertiary.default.hex}}'
 #
 # # Prompt symbols 
 # [character]
@@ -63,18 +63,18 @@ $line_break$character"""
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#00201a'
-color2 = '#191e00'
-color3 = '#c8c7b7'
-color4 = '#212119'
-color5 = '#2d3400'
-color6 = '#13140d'
-color7 = '#05372e'
-color8 = '#c2cd7c'
-color9 = '#47500c'
-error_color = '#ffb4ab'
-source_color = '#525b1b'
-color_fg0 = '#c6c9a7'
+color1 = '{{colors.on_tertiary_fixed.default.hex}}'
+color2 = '{{colors.on_primary_fixed.default.hex}}'
+color3 = '{{colors.on_surface_variant.default.hex}}'
+color4 = '{{colors.surface_container.default.hex}}'
+color5 = '{{colors.on_primary.default.hex}}'
+color6 = '{{colors.surface_dim.default.hex}}'
+color7 = '{{colors.on_tertiary.default.hex}}'
+color8 = '{{colors.primary.default.hex}}'
+color9 = '{{colors.primary_container.default.hex}}'
+error_color = '{{colors.error.default.hex}}'
+source_color = '{{colors.source_color.default.hex}}'
+color_fg0 = '{{colors.secondary.default.hex}}'
 
 [os]
 disabled = false
