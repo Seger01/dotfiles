@@ -1,8 +1,10 @@
+@import url("file:///home/seger/.config/wofi/colors.css");
+
 window {
   margin: 0px;
-  border: 0px none #ebdbb2;
+  border: 0px none @outline;
   border-width: 1px;
-  background-color: #282828;
+  background-color: @surface;
   border-radius: 0px;
 }
 
@@ -12,12 +14,11 @@ window {
   padding-left: 5px;
   border: none;
   border-width: 0px;
-  color: #ebdbb2;
+  color: @on_surface;
   font-family: Sauce Code Pro Nerd Font;
   font-size: 16px;
   font-weight: 600;
-  background-color: none;
-  /* background: ; */
+  background-color: @surface_container;
   outline: none;
   border-radius: 0px;
   margin: 5px 5px;
@@ -32,22 +33,21 @@ window {
 #inner-box {
   margin: 0px;
   border: 0px solid transparent;
-  color: #ebdbb2;
+  color: @on_surface;
   font-weight: normal;
-  background-color: transparent;
-  /* background-color: red; */
+  background-color: @surface_container;
   border-radius: 4px;
 }
 
 #outer-box {
   margin: 0px;
-  border: 1px solid #E78A4E;
+  border: 1px solid @primary;
   border-radius: 0px;
-  background-color: #282828;
+  background-color: @surface;
 }
 
 #scroll {
-  background-color: transparent;
+  background-color: @surface_container;
   margin-top: 0px;
   border: none;
   border-radius: 0px;
@@ -59,47 +59,47 @@ window {
 }
 
 #img:selected {
-  background-color: none;
+  background-color: transparent;
   margin-right: 10px;
   border-radius: 0px;
 }
 
-#img:unselected {
-  background-color: transparent;
+#img {
+  background-color: @surface_container;
   margin-right: 10px;
   border-radius: 0px;
 }
 
 #text:selected {
-  color: #ebdbb2;
+  color: @on_primary_container;
   margin: 0px 0px;
   border: none;
-  border-color: #EA6962;
+  border-color: @primary;
   border-width: 0px;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: @primary_container;
 }
 
-#text:unselected {
-  color: #ebdbb2;
+#text {
+  color: @on_surface;
   margin: 0px 0px;
   border: none;
-  border-color: #ebdbb2;
+  border-color: @outline;
   border-width: 0px;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: @surface_container;
 }
 
 #entry {
   margin: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: @surface_container;
 }
 
 #entry:selected {
   margin: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: @primary_container;
 }

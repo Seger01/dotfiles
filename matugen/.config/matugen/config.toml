@@ -15,15 +15,6 @@ input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 post_hook = 'pkill -SIGUSR1 kitty'
 
-[templates.gtk3]
-input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-3.0/gtk.css'
-post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
-
-[templates.gtk4]
-input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-4.0/gtk.css'
-
 [templates.wofi]
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/wofi/colors.css'
@@ -36,3 +27,31 @@ output_path = '~/.config/starship.toml'
 input_path = '~/.config/matugen/templates/tmux-colors.conf'
 output_path = '~/.tmux/generated.conf'
 post_hook = 'tmux source-file ~/.tmux/generated.conf'
+
+[templates.neovim]
+input_path = '~/.config/matugen/templates/neovim/template.lua'
+output_path = '~/.config/nvim/matugen.lua'
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[templates.spotify_player]
+input_path = '~/.config/matugen/templates/spotify-player-theme.toml'
+output_path = '~/.config/spotify-player/theme.toml'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+#
+# [templates.gtk3]
+# input_path = 'path/to/template'
+# output_path = '~/.config/gtk-3.0/colors.css'
+# post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+#
+# [templates.gtk4]
+# input_path = 'path/to/template'
+# output_path = '~/.config/gtk-4.0/colors.css'
