@@ -1,0 +1,36 @@
+#!/bin/bash
+# Usage:
+#   ./set_charge_thresholds.sh <end_threshold>
+#
+# Example:
+#   ./set_charge_thresholds.sh 60    # start=55, end=60
+
+# set -euo pipefail
+
+START_FILE="/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:37/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/charge_start_threshold"
+END_FILE="/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:37/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/charge_stop_threshold"
+OFFSET=2
+
+if [[ $# -lt 1 ]]; then
+    echo "Usage: $0 <end_threshold>" >&2
+    exit 1
+fi
+
+END="$1"
+
+if ! [[ "$END" =~ ^[0-9]+$ ]]; then
+    echo "Error: end_threshold must be an integer." >&2
+    exit 1
+fi
+
+if (( END < OFFSET )); then
+    echo "Error: end_threshold ($END) must be at least $OFFSET." >&2
+    exit 1
+fi
+
+START=$(( END - OFFSET ))
+
+echo "$START" | sudo tee "$START_FILE"
+echo "$END"   | sudo tee "$END_FILE" 
+echo "$START" | sudo tee "$START_FILE"
+echo "$END"   | sudo tee "$END_FILE" 

@@ -114,11 +114,14 @@ alias ls="eza --icons --group-directories-first"
 alias background="~/.config/wallpapers/randombackground.sh 0" 
 
 alias sudogui="sudo -E "
-alias dushs="sudo du * -sh | sort -h" 
+# alias dushs="sudo du * -sh | sort -h" 
+alias dushs="parallel --gnu 'sudo du -sh {}' ::: * | sort -h" 
 alias dushas="sudo du .* * -sh | sort -h" 
+alias cleanup="sudo paccache -rk1; yay -Sc --aur --noconfirm;"
+
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
-export PATH=$PATH:~/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
+export PATH=$PATH:~/.bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
 
 export EDITOR='nvim'
 export PAGER='bat'
@@ -144,6 +147,22 @@ notcrit(){
     [ $(($(date +%s) - start)) -le 1 ] || notify-send -u critical "Critical Notification" "Long\
  running command \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish" 
 }
+
+
+alias matlabmakecontainer2025b='docker run -it -p 5901:5901 -p 6080:6080 -v "$HOME/projects":/home/matlab/projects --shm-size=512M --name=matlab2025b mathworks/matlab:r2025b -vnc'
+alias matlab2025b="docker start matlab2025b; sleep 1 && vncviewer localhost:1 -passwd ~/matlab-docker/passwd; docker stop matlab2025b"
+
+# alias matlabmakecontainer2023b='docker run -it -p 5901:5901 -p 6080:6080 -v "$HOME/projects":/home/matlab/projects --shm-size=512M --name=matlab2023b mathworks/matlab:r2023b -vnc'
+# alias matlab2023b="docker start matlab2023b; sleep 1 && vncviewer localhost:1 -passwd ~/matlab-docker/passwd; docker stop matlab2023b"
+#
+# alias matlabmakecontainer2023a='docker run -it -p 5901:5901 -p 6080:6080 -v "$HOME/projects":/home/matlab/projects --shm-size=512M --name=matlab2023a mathworks/matlab:r2023a -vnc'
+# alias matlab2023a="docker start matlab2023a; sleep 1 && vncviewer localhost:1 -passwd ~/matlab-docker/passwd; docker stop matlab2023a"
+
+alias matlabmakecontainer2022b='docker run -it -p 5901:5901 -p 6080:6080 -v "$HOME/projects":/home/matlab/projects --shm-size=512M --name=matlab2022b mathworks/matlab:r2022b -vnc'
+alias matlab2022b="docker start matlab2022b; sleep 1 && vncviewer localhost:1 -passwd ~/matlab-docker/passwd; docker stop matlab2022b"
+
+alias matlabmakecontainer2020b='docker run -it -p 5901:5901 -p 6080:6080 -v "$HOME/projects":/home/matlab/projects --shm-size=512M --name=matlab2020b mathworks/matlab:r2020b -vnc'
+alias matlab2020b="docker start matlab2020b; sleep 1 && vncviewer localhost:1 -passwd ~/matlab-docker/passwd; docker stop matlab2020b"
 
 alias cdure="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/"
 alias cdureme="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer "

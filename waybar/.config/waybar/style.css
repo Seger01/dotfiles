@@ -114,14 +114,16 @@ button:hover {
   color: @secondary;
 }
 
+#battery.charging,
+#battery.plugged,
 #battery {
   color: @tertiary_fixed_dim
 }
 
-#battery.charging,
-#battery.plugged {
-  color: @error_container;
-}
+/* #battery.charging, */
+/* #battery.plugged { */
+/*   color: @error_container; */
+/* } */
 
 @keyframes blink {
   to {

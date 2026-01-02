@@ -6,15 +6,15 @@
 #
 # [palettes.colors]
 # mustard = '#af8700' # example
-# color1 = '#7eda9a'
-# color2 = '#00391b'
-# color3 = '#b1cbcf'
-# color4 = '#152223'
-# color5 = '#00391b'
-# color6 = '#091517'
-# color7 = '#091517'
-# color8 = '#7eda9a'
-# color9 = '#81d3dd'
+# color1 = '#50d8ed'
+# color2 = '#00363d'
+# color3 = '#bdc7dc'
+# color4 = '#1b2029'
+# color5 = '#00363d'
+# color6 = '#0f141c'
+# color7 = '#0f141c'
+# color8 = '#50d8ed'
+# color9 = '#a7c8ff'
 #
 # # Prompt symbols 
 # [character]
@@ -63,18 +63,18 @@ $line_break$character"""
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#002023'
-color2 = '#00210e'
-color3 = '#b1cbcf'
-color4 = '#152223'
-color5 = '#00391b'
-color6 = '#091517'
-color7 = '#00363b'
-color8 = '#7eda9a'
-color9 = '#00522a'
+color1 = '#001b3c'
+color2 = '#001f24'
+color3 = '#bdc7dc'
+color4 = '#1b2029'
+color5 = '#00363d'
+color6 = '#0f141c'
+color7 = '#05305f'
+color8 = '#50d8ed'
+color9 = '#004f58'
 error_color = '#ffb4ab'
-source_color = '#90c3c9'
-color_fg0 = '#96d5a6'
+source_color = '#1a5eab'
+color_fg0 = '#82d3e2'
 
 [os]
 disabled = false

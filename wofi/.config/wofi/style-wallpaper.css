@@ -10,14 +10,14 @@
 
 window {
     all:unset;
-    padding: 20px;
+    padding: 2px;
     border-radius: 0px;
     background-color: alpha(@background,.5);
 }
 
 #inner-box {
-    margin: 2px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
     border: none;
 }
 
@@ -27,28 +27,28 @@ window {
 
 #scroll {
     margin: 0px;
-    padding: 30px;
+    padding: 0px;
     border: none;
 }
 
 #input {
     all:unset;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    padding: 20px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+    padding: 5px;
     border: none;
     outline: none;
     color: @text;
-    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
-    border-radius:10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, .5);
+    border-radius:2px;
     background-color: alpha(@background,.2);
 }
 
 #input image {
     border: none;
     color: @red;
-    padding-right:10px;
+    padding-right:0px;
 }
 
 #input * {
@@ -59,11 +59,11 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    border-radius:10px;
+    border-radius:0px;
 }
 
 #text {
-    margin: 5px;
+    margin: 0px;
     border: none;
     color: @text;
     outline: none;
@@ -71,7 +71,7 @@ window {
 
 #entry {
     all:unset;
-    padding: 20 20 20 45;
+    padding: 2 2 2 4;
 }
 
 #entry image {
