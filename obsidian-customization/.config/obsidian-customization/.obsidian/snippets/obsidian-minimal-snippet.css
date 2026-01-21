@@ -1,0 +1,170 @@
+.theme-dark {
+    --accent-h:calc(58.03278700778703/255*360);
+    --accent-s:calc(57.25490301847458/255*100%);
+    --accent-l:calc(55.96330428743555/255*100%);
+
+    --text-normal:#dae6da;
+    --text-muted:#b5ccba;
+    --text-faint:#809685;
+
+    --background-primary:#0b160f; /* editor and right ribbon */
+    --background-secondary:#0b160f; /* left ribbon */ 
+    --background-modifier-hover:#4b4900;
+    --background-modifier-active-hover:#ceca75;
+    --background-modifier-message:#0b160f;
+    --background-modifier-form-field:#4b4900;
+
+    --ribbon-background:#0b160f;
+    --divider-color:#4b4900;
+    --scrollbar-thumb-bg:#eae68e;
+    --status-bar-border-color:#4b4900;
+    --status-bar-background:#0b160f;
+    --titlebar-background:#0b160f;
+    --titlebar-text-color:#dae6da;
+
+    --nav-item-color:#b5ccba;
+    --nav-item-color-active:#ece76d;
+    --nav-item-background-active:#4b4900;
+    --nav-item-color-hover:#eae68e;
+    --nav-item-background-hover:#4b4900;
+
+    --tab-background-active:#4b4900;
+    --tab-text-color-active:#ece76d;
+    --tab-text-color:#b5ccba;
+
+    --icon-color:#dae6da;
+
+    --h1-color:#cfcb55;
+    --h2-color:#93d5aa;
+    --h3-color:#ffdad6;
+    --h4-color: color-mix(in srgb, #cfcb55, #93d5aa);
+    --h5-color: color-mix(in srgb, #cfcb55, #ceca75);
+    --h6-color: color-mix(in srgb, #93d5aa, #ceca75);
+
+    --cursorcolor: var(--h1-color);
+
+    --link-external-color: var(--h5-color);
+    --link-external-color-hover: var(--h5-color);
+
+    /* internal/file links (wikilinks + markdown links to notes) */
+    --link-color: var(--h3-color);
+    --link-color-hover: var(--h5-color);
+
+    /* unresolved (nonexistent note) links */
+    --link-unresolved-color: var(--text-faint);
+    --link-unresolved-opacity: 1;
+}
+
+/* add parts not accessible without specific selector?*/
+.theme-dark .sidebar-toggle-button.mod-left {
+    color:#dae6da;
+    background:#0b160f;
+}
+.theme-dark .sidebar-toggle-button.mod-right {
+    color:#dae6da;
+    background:#0b160f;
+}
+
+.theme-dark .workspace-tab-header-container{
+    background:#0b160f;
+}
+
+
+/* copy for light mode */
+.theme-light {
+    --accent-h:calc(58.20000013679265/255*360);
+    --accent-s:calc(19.607843458652496/255*100%);
+    --accent-l:calc(100.0/255*100%);
+
+    --text-normal:#141e17;
+    --text-muted:#374b3d;
+    --text-faint:#677c6c;
+
+    --background-primary:#f0fdf1; /* editor and right ribbon */
+    --background-secondary:#d1ddd2; /* left ribbon */ 
+    --background-modifier-hover:#eae68e;
+    --background-modifier-active-hover:#636116;
+    --background-modifier-message:#d1ddd2;
+    --background-modifier-form-field:#ece76d;
+
+    --ribbon-background:#f0fdf1;
+    --divider-color:#eae68e;
+    --scrollbar-thumb-bg:#1e1d00;
+    --status-bar-border-color:#eae68e;
+    --status-bar-background:#f0fdf1;
+    --titlebar-background:#f0fdf1;
+    --titlebar-text-color:#141e17;
+
+    --nav-item-color:#374b3d;
+    --nav-item-color-active:#1e1d00;
+    --nav-item-background-active:#ece76d;
+    --nav-item-color-hover:#1e1d00;
+    --nav-item-background-hover:#eae68e;
+
+    --tab-background-active:#ece76d;
+    --tab-text-color-active:#1e1d00;
+    --tab-text-color:#374b3d;
+
+    --icon-color:#141e17;
+
+    --h1-color:#646100;
+    --h2-color: color-mix(in srgb, #646100, #2a6a47);
+    --h3-color:#2a6a47;
+    --h4-color: color-mix(in srgb, #646100, #636116);
+    --h5-color:#636116;
+    --h6-color: color-mix(in srgb, #2a6a47, #636116);
+}
+
+/* add parts not accessible without specific selector?*/
+.theme-light .sidebar-toggle-button.mod-left {
+    color:#141e17;
+    background:#f0fdf1;
+}
+.theme-light .sidebar-toggle-button.mod-right {
+    color:#141e17;
+    background:#f0fdf1;
+}
+
+.theme-light .workspace-tab-header-container{
+    background:#f0fdf1;
+}
+
+/* Vim cursor and caret styles */
+/* Normal caret color for editor */
+.theme-dark .cm-editor,
+.theme-dark .cm-content,
+.theme-dark .markdown-source-view,
+.theme-dark .cm-s-obsidian {
+    caret-color: var(--cursorcolor);
+}
+.theme-light .cm-editor,
+.theme-light .cm-content,
+.theme-light .markdown-source-view,
+.theme-light .cm-s-obsidian {
+    caret-color: var(--h1-color);
+}
+
+/* Vim-style (fat/block) cursor and animation */
+.theme-dark .cm-fat-cursor .CodeMirror-cursor,
+.theme-dark .cm-animate-fat-cursor {
+    background-color: var(--cursorcolor);
+    opacity: 0.5;
+    width: 5px;
+}
+.theme-light .cm-fat-cursor .CodeMirror-cursor,
+.theme-light .cm-animate-fat-cursor {
+    background-color: var(--h1-color);
+    opacity: 0.5;
+    width: 5px;
+}
+
+/* Normal line caret and border (for insert mode/cursor) */
+.cm-line {
+    caret-color: var(--cursorcolor) !important;
+}
+.cm-cursor {
+    border-left-color: var(--cursorcolor) !important;
+}
+.cm-focused .cm-fat-cursor {
+    background-color: var(--cursorcolor) !important;
+}

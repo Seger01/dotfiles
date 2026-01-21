@@ -1,0 +1,246 @@
+{
+  "main": {
+    "id": "e88d2e0e29d46411",
+    "type": "split",
+    "children": [
+      {
+        "id": "798c15d8176d906e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c04644f6ae63fd09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/control/Control Design document.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Control Design document"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e5512f5c7374ed8",
+    "type": "split",
+    "children": [
+      {
+        "id": "96d4058904b8c3c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cae8ef7eff46946",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b3b73c710797351b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8f0f57b0eaf9c577",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8bcd95bc661ddefe",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a1d24fd6caedd48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23f60e42a90233a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fadce6b226f204f1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b9a05c62083f6332",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "34a115a6ae48be00",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "72ff1df9f128f245",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "d770fc25c6482ce1",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "docs/control/Control Design document.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Control Design document"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "c04644f6ae63fd09",
+  "lastOpenFiles": [
+    "docs/control/figures/flowchart_control.md",
+    "docs/control/Control Design document.md",
+    "docs/control/figures/control_rviz.png",
+    "docs/path/Path Finding Design document.md",
+    "docs/can/CAN Design document.md",
+    "docs/docker/Docker development environment setup and usage guide.md",
+    "docs/hardware/DV ECU setup guide.md",
+    "docs/can",
+    "docs/index.md",
+    "docs/hardware/Untitled.md",
+    "docs/imu/IMU Design document.md",
+    "docs/hardware",
+    "src/9_ros/control/control_node/src/main.cpp~",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/runtime.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/replay.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/raw.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/obs.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/ouster_driver_test.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/legacy.yaml",
+    "runtime/logging/run_2026_01_20_07_23_56/configs/main_config/modes/control.yaml",
+    "docs/control/figures/flowchart_control.png",
+    "docs/control/figures/Control_Architecture_draft.md",
+    "docs/control/figures/Drawing 2026-01-18 16.10.51.md",
+    "docs/control/figures/Drawing 2026-01-18 16.10.51.png",
+    "docs/control/figures/Control_Architecture_draft.png",
+    "docs/control/figures/test_diagram.md",
+    "docs/control/figures/ControlNodeArchitectureDraft.png",
+    "docs/control/figures/test_diagram.png",
+    "URE.md",
+    "todos.md",
+    "docs/control/figures/control_viz_1.png",
+    "src/9_ros/control/control_node/README.md",
+    "quartz/public/yaml_parser/Yaml-Parser-Design-document-og-image.webp",
+    "quartz/public/vehicle/Vehicle-Design-document-og-image.webp",
+    "quartz/public/track/Track-Detection-Design-document-og-image.webp",
+    "Control System Design document.md",
+    "quartz/content/index.md",
+    "quartz/node_modules/pixi.js/README.md",
+    "quartz/node_modules/mathjax-full/README.md",
+    "quartz/node_modules/mathjax-full/CONTRIBUTING.md",
+    "quartz/node_modules/rxjs/README.md",
+    "quartz/node_modules/rxjs/CODE_OF_CONDUCT.md",
+    "quartz/node_modules/rxjs/CHANGELOG.md",
+    "quartz/node_modules/typescript/SECURITY.md",
+    "quartz/node_modules/typescript/README.md",
+    "Untitled.canvas"
+  ]
+}

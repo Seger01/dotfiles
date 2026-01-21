@@ -1,50 +1,3 @@
-# format = '''
-# $directory$git_branch$rust$python
-# $character'''
-#
-# palette = 'colors'
-#
-# [palettes.colors]
-# mustard = '#af8700' # example
-# color1 = '{{colors.primary_fixed_dim.default.hex}}'
-# color2 = '{{colors.on_primary.default.hex}}'
-# color3 = '{{colors.on_surface_variant.default.hex}}'
-# color4 = '{{colors.surface_container.default.hex}}'
-# color5 = '{{colors.on_primary.default.hex}}'
-# color6 = '{{colors.surface_dim.default.hex}}'
-# color7 = '{{colors.surface.default.hex}}'
-# color8 = '{{colors.primary.default.hex}}'
-# color9 = '{{colors.tertiary.default.hex}}'
-#
-# # Prompt symbols 
-# [character]
-# success_symbol = "[🞈](color9 bold)"
-# error_symbol = "[🞈](@{error})"
-# vicmd_symbol = "[🞈](#f9e2af)"
-#
-# [directory]
-# format = "[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
-#
-# [directory.substitutions]
-# "Documents" = "󰈙 "
-# "Downloads" = " "
-# "Music" = " "
-# "Pictures" = " "
-#
-# [git_branch]
-# format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
-#
-# [time]
-# format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $time](fg:color3 bg:color4)[](fg:color4) "
-# disabled = false
-# time_format = "%R" # Hour:Minute Format
-#
-# [python]
-# format = "[](fg:color8 bg:color4)[${symbol}${version}](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5)( ${virtualenv})](fg:color3 bg:color4)[](fg:color4) "
-# symbol = '🐍'
-# # pyenv_version_name = true
-# pyenv_prefix = 'venv'
-
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
@@ -132,10 +85,106 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[ ](bold fg:source_color)'
+success_symbol = '[ ](bold fg:color8)'
 error_symbol = '[ ](bold fg:error_color)'
 vimcmd_symbol = '[](bold fg:color_green)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
 vimcmd_replace_symbol = '[](bold fg:color_purple)'
 vimcmd_visual_symbol = '[](bold fg:color_yellow)'
 
+#### ATTEMPT AT light mode
+# "$schema" = 'https://starship.rs/config-schema.json'
+#
+# format = """
+# [](color4)\
+# $os\
+# $username\
+# [](bg:color9 fg:color4)\
+# $directory\
+# [](fg:color9 bg:color7)\
+# $git_branch\
+# [](fg:color7 bg:color1)\
+# $time\
+# [ ](fg:color1)\
+# $line_break$character"""
+#
+# palette = 'colors'
+#
+# [palettes.colors]
+# color1 = '{{colors.primary.default.hex}}'
+# color2 = '{{colors.on_primary.default.hex}}'
+# color3 = '{{colors.on_surface_variant.default.hex}}'
+# color4 = '{{colors.tertiary.default.hex}}'
+# color5 = '{{colors.on_tertiary.default.hex}}'
+# color6 = '{{colors.secondary_container.default.hex}}'
+# color7 = '{{colors.on_secondary_container.default.hex}}'
+# color8 = '{{colors.primary.default.hex}}'
+# color9 = '{{colors.primary_container.default.hex}}'
+# error_color = '{{colors.error.default.hex}}'
+# source_color = '{{colors.source_color.default.hex}}'
+# color_fg0 = '{{colors.secondary.default.hex}}'
+#
+# [os]
+# disabled = false
+# style = "bg:color4 fg:color5"
+#
+# [os.symbols]
+# Windows = "󰍲"
+# Ubuntu = "󰕈"
+# SUSE = ""
+# Raspbian = "󰐿"
+# Mint = "󰣭"
+# Macos = "󰀵"
+# Manjaro = ""
+# Linux = "󰌽"
+# Gentoo = "󰣨"
+# Fedora = "󰣛"
+# Alpine = ""
+# Amazon = ""
+# Android = ""
+# Arch = "󰣇"
+# Artix = "󰣇"
+# EndeavourOS = ""
+# CentOS = ""
+# Debian = "󰣚"
+# Redhat = "󱄛"
+# RedHatEnterprise = "󱄛"
+# Pop = ""
+#
+# [username]
+# show_always = true
+# style_user = "bg:color4 fg:color5"
+# style_root = "bg:color4 fg:color5"
+# format = '[ $user ]($style)'
+#
+# [directory]
+# style = "fg:color_fg0 bg:color9"
+# format = "[ $path ]($style)"
+# truncation_length = 4
+# truncation_symbol = "…/"
+#
+#
+# [git_branch]
+# symbol = ""
+# style = "bg:color_aqua"
+# format = '[[ $symbol $branch ](fg:color_fg0 bg:color7)]($style)'
+#
+# [time]
+# disabled = false
+# time_format = "%R"
+# style = "bg:color_bg1"
+# format = '[[  $time ](fg:color2 bg:color1)]($style)'
+#
+# [line_break]
+# disabled = false
+#
+# [character]
+# disabled = false
+# success_symbol = '[ ](bold fg:color8)'
+# error_symbol = '[ ](bold fg:error_color)'
+# vimcmd_symbol = '[](bold fg:color_green)'
+# vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+# vimcmd_replace_symbol = '[](bold fg:color_purple)'
+# vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+#
+#

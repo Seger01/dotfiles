@@ -16,7 +16,7 @@ selected=$(echo "$choices" | wofi --dmenu --prompt "Select book:")
 # Find the full path for the selected file
 for f in "${files[@]}"; do
     if [[ $(basename "$f") == "$selected" ]]; then
-        evince "$f"
+        zathura "$f"
         break
     fi
 done

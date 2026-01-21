@@ -15,14 +15,12 @@ main() {
     # hyprctl hyprpaper "$selected_wallpaper"
     hyprctl hyprpaper wallpaper ,"$selected_wallpaper", cover
 
+    # matugen image $selected_wallpaper -t scheme-tonal-spot -m light --show-colors >> ~/.config/scripts/matugen_colors.txt
     matugen image $selected_wallpaper -t scheme-fruit-salad --show-colors >> ~/.config/scripts/matugen_colors.txt
     # matugen image $selected_wallpaper -t scheme-tonal-spot --show-colors >> ~/.config/scripts/matugen_colors.txt
     # matugen image $selected_wallpaper -t scheme-vibrant --show-colors >> ~/.config/scripts/matugen_colors.txt
-    # matugen image $selected_wallpaper -t scheme-content --show-colors >> ~/.config/scripts/matugen_colors.txt
-    # matugen image $selected_wallpaper -t scheme-expressive --show-colors >> ~/.config/scripts/matugen_colors.txt
-    # matugen image $selected_wallpaper -t scheme-monochrome --show-colors >> ~/.config/scripts/matugen_colors.txt
 
-    ~/.local/share/icons/papirus-folders.sh < ~/.config/matugen/papirus-folders/folder-color.txt
+    (~/.local/share/icons/papirus-folders.sh < ~/.config/matugen/papirus-folders/folder-color.txt &)
 }
 main
 

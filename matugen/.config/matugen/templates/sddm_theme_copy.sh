@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Single wallpaper for all monitors:
 WALLPAPER="{{image}}"
 
 cp /home/seger/.config/matugen/sddm/matugen.conf /usr/share/sddm/themes/silent/configs/matugen.conf

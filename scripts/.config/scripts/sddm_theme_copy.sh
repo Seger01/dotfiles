@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Single wallpaper for all monitors:
-WALLPAPER="/home/seger/.config/wallpapers/wallpapers/pixel_art_beach.jpeg"
+WALLPAPER="/home/seger/.config/wallpapers/wallpapers/wallhaven-gwwzy3_2560x1440.png"
 
 cp /home/seger/.config/matugen/sddm/matugen.conf /usr/share/sddm/themes/silent/configs/matugen.conf
 

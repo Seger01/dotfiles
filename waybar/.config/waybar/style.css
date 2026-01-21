@@ -133,7 +133,7 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: @foreground;
+    background-color: @base;
 }
 
 label:focus {
@@ -151,7 +151,3 @@ label:focus {
 #wireplumber {
   color: @primary_fixed_dim;
 }
-/**/
-/* #wireplumber.muted { */
-/*   color: @red; */
-/* } */

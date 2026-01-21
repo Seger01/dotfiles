@@ -1,0 +1,7 @@
+{
+  "cssTheme": "Minimal",
+  "nativeMenus": true,
+  "enabledCssSnippets": [
+    "obsidian-minimal-snippet"
+  ]
+}
