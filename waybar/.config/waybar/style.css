@@ -1,79 +1,69 @@
 @import "colors.css";
 
 * {
-  font-family: "SauceCodePro Nerd Font Regular", sans-serif; 
-  font-weight: bold; 
-  font-size: 14px;
-  color: @base0D;
+    /* font-family: "SauceCodePro Nerd Font Regular", sans-serif;  */
+    font-family: "JetBrainsMono Nerd Font Propo", sans-serif; 
+    font-weight: bold; 
+    font-size: 18px;
+    /* color: @base0D; */
+    min-height: 0;
+    padding: 0;
+    margin: 0;
 }
 
-#window {
-  color: @base08;
-  background: @base01;
-  transition-property: background-color;
-  border-radius: 100px;
-  padding: 0 10px;
+.modules-center{
+    background: @base01;
+    /* background: #FFFFFF; */
+    padding: 6px 10px 6px 10px;
+    margin: 8px 8px 6px 8px;
+    border-radius: 28px;
+    box-shadow: 2 2px 4px rgba(0,0,0,0.3);
 }
 
 #waybar.empty #window {
-  background: none;
+    background: none;
 }
 
 window#waybar {
-  background-color: transparent;
-}
-
-button {
-  margin-right: 5px;
-  border: none;
-  border-radius: 0px;
-  background: @base01;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-button:hover {
-  color: @base08;
-  border: none;
-  box-shadow: none;
-  text-shadow: none;
+    background-color: transparent;
 }
 
 #workspaces {
-  border-radius: 20px;
-  background: @base01;
-  padding: 0 12px;
+    border-radius: 100px;
+    background: @base01;
+    padding: 0;
+    margin: 0 10px 0 0px;
+    border: none;
+    box-shadow: none;
 }
 
 #workspaces button {
-  border: none;
-  background-color: @base01;
-  color: @base0D;
-  transition: 0.2s;
-  padding-left: 0;
-  padding-right: 0px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-#workspaces button:hover {
-  color: @base09;
-  background: @base01;
-  transition: 0.2s;
+    padding: 0px 6px;
+    margin: 0px 2px;
+    border-radius: 16px;
+    border: none;
+    background-color: @base01;
+    color: @base02;
+    /* color: @base0D; */
+    transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.urgent {
-  color: @base08;
+    color: @base08;
 }
 
 #workspaces button.active {
-    border-bottom: 3px solid @base0C;
+    background: linear-gradient(135deg, @base0B 0%, @base0C 50%, @base0D 100%);
+    color: @base01;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    /* border-bottom: 3px solid @base0C; */
 }
 
 #mode {
-  background: @base01;
-  box-shadow: none;
-  text-shadow: none;
+    background: @base01;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 #clock,
@@ -82,42 +72,19 @@ button:hover {
 #memory,
 #wireplumber,
 #custom-power {
-  padding-left: 15px;
-  padding-right: 18px;
-  background-color: @base01;
-  border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: @base01;
+    border-radius: 40px;
 }
-
-#window,
-#workspaces {
-  margin: 0 2px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
-}
-
 #clock {
-  color: @base0C;
+    color: @base0C;
 }
 
 #battery.charging,
 #battery.plugged,
 #battery {
-  color: @base0B;
-}
-
-@keyframes blink {
-  to {
-    background-color: @base01;
-    color: #000000;
-  }
+    color: @base0B;
 }
 
 #battery.critical:not(.charging) {
@@ -125,17 +92,58 @@ button:hover {
 }
 
 label:focus {
-  color: @base0D;
-}
-
-#cpu {
-  color: @base0E;
-}
-
-#memory {
-  color: @base0B;
+    color: #FFFFFF;
 }
 
 #wireplumber {
-  color: @base0D;
+    color: @base0E;
 }
+
+/* #cpu { */
+/*     color: @base0E; */
+/* } */
+/**/
+/* #memory { */
+/*     color: @base0B; */
+/* } */
+/**/
+/* If workspaces is the leftmost module, omit left margin */
+/* .modules-left>widget:first-child>#workspaces { */
+/*     margin-left: 0; */
+/* } */
+
+/* If workspaces is the rightmost module, omit right margin */
+/* .modules-right>widget:last-child>#workspaces { */
+/*     margin-right: 0; */
+/* } */
+
+/* #workspaces button:hover { */
+/*     color: @base09; */
+/*     background: @base01; */
+/*     transition: 0.2s; */
+/* } */
+
+/* button { */
+/*   margin-right: 5px; */
+/*   border: none; */
+/*   border-radius: 0px; */
+/*   background: @base01; */
+/*   box-shadow: none; */
+/*   text-shadow: none; */
+/* } */
+/**/
+/* button:hover { */
+/*   color: @base08; */
+/*   border: none; */
+/*   box-shadow: none; */
+/*   text-shadow: none; */
+/* } */
+
+/* #window { */
+/*     color: @base08; */
+/*     background: @base01; */
+/*     transition-property: background-color; */
+/*     border-radius: 100px; */
+/*     padding: 0 10px; */
+/* } */
+
