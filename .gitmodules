@@ -10,3 +10,6 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "scripts/.config/scripts/theme-switcher/color-defs/schemes"]
+	path = scripts/.config/scripts/theme-switcher/color-defs/schemes
+	url = https://github.com/tinted-theming/schemes.git

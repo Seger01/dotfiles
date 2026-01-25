@@ -12,7 +12,7 @@ window {
     all:unset;
     padding: 2px;
     border-radius: 0px;
-    background-color: alpha(@background,.5);
+    background-color: alpha(@base00,.5);
 }
 
 #inner-box {
@@ -39,15 +39,15 @@ window {
     padding: 5px;
     border: none;
     outline: none;
-    color: @text;
+    color: @base05;
     box-shadow: 1px 1px 3px rgba(0,0,0, .5);
     border-radius:2px;
-    background-color: alpha(@background,.2);
+    background-color: alpha(@base00,.2);
 }
 
 #input image {
     border: none;
-    color: @red;
+    color: @base08;
     padding-right:0px;
 }
 
@@ -65,7 +65,7 @@ window {
 #text {
     margin: 0px;
     border: none;
-    color: @text;
+    color: @base05;
     outline: none;
 }
 
@@ -82,19 +82,19 @@ window {
 
 #entry arrow {
     border: none;
-    color: @lavender;
+    color: @base0E;
 }
 
 #entry:selected {
     border: none;
     border-radius: 20px;
-    background-color: alpha(@background,.2);
+    background-color: alpha(@base00,.2);
 }
 
 #entry:selected #text {
-    color: @mauve;
+    color: @base0E;
 }
 
 #entry:drop(active) {
-    background-color: @lavender !important;
+    background-color: @base0E !important;
 }

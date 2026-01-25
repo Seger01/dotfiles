@@ -1,0 +1,70 @@
+palette:
+  base00: "#111C18"   # background
+  base01: "#23372B"   # black dark shade, surface0
+  base02: "#53685B"   # black light shade, surface1
+  base03: "#C1C497"   # overlay0, soft contrast (selection bg in theme, good highlight)
+  base04: "#F6F5DD"   # subtext0, bright white
+  base05: "#C1C497"   # main foreground, text
+  base06: "#D7C995"   # cursor color—good as rosewater (accent/secondary foreground)
+  base07: "#9EEBB3"   # bright accent, pale green/white crossover (lavender)
+  base08: "#0F744D"   # ANSI red, error, alert
+  base09: "#1A8C5B"   # peach, soft red, highlight
+  base0A: "#E5C736"   # yellow, text warning/accent
+  base0B: "#549e6a"   # green, success/accent
+  base0C: "#2DD5B7"   # cyan, info/highlight
+  base0D: "#0B985C"   # blue/accent, matches theme accent
+  base0E: "#185F44"   # magenta, strong
+  base0F: "#75bbb3"   # flamingo, blue-2, extra accent
+
+# /* CSS HEX */
+# --turf-green: #0F744D;
+# --charcoal-brown: #27281F;
+# --pine-teal: #0B4334;
+# --evergreen: #06211A;
+# --shamrock: #0B985C;
+# --sea-green: #1A8C5B;
+# --emerald-depths: #185F44;
+# --black: #0A0609;
+# --evergreen-2: #0B2720;
+
+# palette:
+#   base00: "#111C18" # base (background)
+#   base01: "#23372B" # surface0 (black, lowest shade)
+#   base02: "#53685B" # surface1 (black, lighter variant)
+#   base03: "#C1C497" # overlay0 (foreground/selection bg)
+#   base04: "#F6F5DD" # subtext0 (white)
+#   base05: "#C1C497" # text (foreground)
+#   base06: "#D7C995" # rosewater (cursor)
+#   base07: "#9EEBB3" # lavender (bright white)
+#   base08: "#FF5345" # red
+#   base09: "#DB9F9C" # peach (bright red)
+#   base0A: "#E5C736" # yellow/green (yellow highlight)
+#   base0B: "#549E6A" # green
+#   base0C: "#2DD5B7" # teal/cyan
+#   base0D: "#509475" # blue (default blue)
+#   base0E: "#D2689C" # magenta
+#   base0F: "#75BBB3" # flamingo (bright blue/alt accent)
+# official color definitions
+# accent = "#509475"
+# cursor = "#D7C995"
+# foreground = "#C1C497"
+# background = "#111c18"
+# selection_foreground = "#111C18"
+# selection_background = "#C1C497"
+#
+# color0 = "#23372B"
+# color1 = "#FF5345"
+# color2 = "#549e6a"
+# color3 = "#459451"
+# color4 = "#509475"
+# color5 = "#D2689C"
+# color6 = "#2DD5B7"
+# color7 = "#F6F5DD"
+# color8 = "#53685B"
+# color9 = "#db9f9c"
+# color10 = "#63b07a"
+# color11 = "#E5C736"
+# color12 = "#ACD4CF"
+# color13 = "#75bbb3"
+# color14 = "#8CD3CB"
+# color15 = "#9eebb3"

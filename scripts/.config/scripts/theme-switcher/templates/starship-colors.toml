@@ -1,0 +1,96 @@
+format = """
+[](color_red)\
+$os\
+$username\
+[](bg:color_orange fg:color_red)\
+$directory\
+[](fg:color_orange bg:color_blue)\
+$git_branch\
+[](fg:color_blue bg:color_magenta)\
+$time\
+[ ](fg:color_magenta)\
+$line_break$character"""
+
+palette = 'base16'
+
+[palettes.base16]
+color_bg0 = '{{base00}}'
+color_bg1 = '{{base01}}'
+color_bg2 = '{{base02}}'
+color_bg3 = '{{base03}}'
+color_fg0 = '{{base04}}'
+color_fg1 = '{{base05}}'
+color_fg2 = '{{base06}}'
+color_fg3 = '{{base07}}'
+color_red = '{{base08}}'
+color_orange = '{{base09}}'
+color_yellow = '{{base0A}}'
+color_green = '{{base0B}}'
+color_cyan = '{{base0C}}'
+color_blue = '{{base0D}}'
+color_magenta = '{{base0E}}'
+color_brown = '{{base0F}}'
+color_accent = '{{base0D}}'
+error_color = '{{base08}}'
+
+[os]
+disabled = false
+style = "bg:color_red fg:color_fg1"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = true
+style_user = "bg:color_red fg:color_fg1"
+style_root = "bg:color_red fg:color_fg1"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_fg1 bg:color_orange"
+format = "[ $path ]($style)"
+truncation_length = 4
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol $branch ](fg:color_fg1 bg:color_blue)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_magenta"
+format = '[[  $time ](fg:color_fg1 bg:color_magenta)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[ ](bold fg:color_green)'
+error_symbol = '[ ](bold fg:error_color)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_magenta)'
+vimcmd_replace_symbol = '[](bold fg:color_magenta)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'

@@ -1,0 +1,17 @@
+palette:
+  base00: "#0C0000"    # custom deep black (added)
+  base01: "#140001"    # darkest from your palette
+  base02: "#1E0303"    # next darkest from your palette
+  base03: "#370407"    # rich dark red
+  base04: "#5A050E"    # brick red
+  base05: "#7C072A"    # deep rose (can work as main foreground)
+  base06: "#A40D2C"    # magenta-red accent
+  base07: "#FEA866"    # brightest, for UI white (lavender)
+  base08: "#E42E1D"    # ANSI red, errors
+  base09: "#FA6518"    # orange/peach
+  base0A: "#FE8C2D"    # yellow, softer highlight
+  base0B: "#FEAD39"    # bright yellow/golden, main accent
+  base0C: "#FEA866"    # pale orange for teal/cyan slot
+  base0D: "#A40D2C"    # rich reddish accent for blue slot (visual balance)
+  base0E: "#db0c4a"    # secondary magenta/purple
+  base0F: "#FEA866"    # extra accent (also the brightest)

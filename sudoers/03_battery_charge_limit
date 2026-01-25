@@ -1,0 +1,2 @@
+ALL ALL = (ALL) NOPASSWD: /usr/bin/tee /sys/devices/LNXSYSTM\:00/LNXSYBUS\:00/PNP0A08\:00/device\:37/PNP0C09\:00/PNP0C0A\:00/power_supply/BAT0/charge_start_threshold 
+ALL ALL = (ALL) NOPASSWD: /usr/bin/tee /sys/devices/LNXSYSTM\:00/LNXSYBUS\:00/PNP0A08\:00/device\:37/PNP0C09\:00/PNP0C0A\:00/power_supply/BAT0/charge_stop_threshold

@@ -1,190 +1,98 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+$schema = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color2)\
+[](color_bg2)\
 $os\
 $username\
-[](bg:color9 fg:color2)\
+[](bg:color_bg3 fg:color_bg2)\
 $directory\
-[](fg:color9 bg:color7)\
+[](fg:color_bg3 bg:color_accent)\
 $git_branch\
-[](fg:color7 bg:color1)\
+[](fg:color_accent bg:color_bg1)\
 $time\
-[ ](fg:color1)\
+[ ](fg:color_bg1)\
 $line_break$character"""
 
-palette = 'colors'
-
-[palettes.colors]
-color1 = '#002110'
-color2 = '#1e1d00'
-color3 = '#b5ccba'
-color4 = '#18221b'
-color5 = '#333200'
-color6 = '#0b160f'
-color7 = '#00391f'
-color8 = '#cfcb55'
-color9 = '#4b4900'
-error_color = '#ffb4ab'
-source_color = '#334b3b'
-color_fg0 = '#ceca75'
+palette = 'base16'
+#161019
+[palettes.base16]
+color_bg0 = '#1e1e2e'
+color_bg1 = '#313244'
+color_bg2 = '#45475a'
+color_bg3 = '#6c7086'
+color_fg0 = '#a6adc8'
+color_fg1 = '#cdd6f4'
+color_fg2 = '#f5e0dc'
+color_fg3 = '#b4befe'
+color_red = '#f38ba8'
+color_orange = '#fab387'
+color_yellow = '#f9e2af'
+color_green = '#a6e3a1'
+color_cyan = '#94e2d5'
+color_blue = '#89b4fa'
+color_magenta = '#cba6f7'
+color_brown = '#f2cdcd'
+color_accent = '#89b4fa'
+error_color = '#f38ba8'
 
 [os]
 disabled = false
-style = "bg:color2 fg:color_fg0"
+style = "bg:color_bg2 fg:color_fg1"
 
 [os.symbols]
 Windows = "󰍲"
 Ubuntu = "󰕈"
-SUSE = ""
+SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
 Macos = "󰀵"
-Manjaro = ""
+Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
 Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
+Alpine = ""
+Amazon = ""
+Android = ""
 Arch = "󰣇"
 Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
+EndeavourOS = ""
+CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-Pop = ""
+Pop = ""
 
 [username]
 show_always = true
-style_user = "bg:color2 fg:color_fg0"
-style_root = "bg:color2 fg:color_fg0"
+style_user = "bg:color_bg2 fg:color_fg1"
+style_root = "bg:color_bg2 fg:color_fg1"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_fg0 bg:color9"
+style = "fg:color_fg1 bg:color_bg3"
 format = "[ $path ]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 
-
 [git_branch]
-symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color7)]($style)'
+symbol = ""
+style = "bg:color_accent"
+format = '[[ $symbol $branch ](fg:color_fg1 bg:color_accent)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
 style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color1)]($style)'
+format = '[[  $time ](fg:color_fg1 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[ ](bold fg:color8)'
-error_symbol = '[ ](bold fg:error_color)'
-vimcmd_symbol = '[](bold fg:color_green)'
-vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_yellow)'
-
-#### ATTEMPT AT light mode
-# "$schema" = 'https://starship.rs/config-schema.json'
-#
-# format = """
-# [](color4)\
-# $os\
-# $username\
-# [](bg:color9 fg:color4)\
-# $directory\
-# [](fg:color9 bg:color7)\
-# $git_branch\
-# [](fg:color7 bg:color1)\
-# $time\
-# [ ](fg:color1)\
-# $line_break$character"""
-#
-# palette = 'colors'
-#
-# [palettes.colors]
-# color1 = '#cfcb55'
-# color2 = '#333200'
-# color3 = '#b5ccba'
-# color4 = '#93d5aa'
-# color5 = '#00391f'
-# color6 = '#4b4900'
-# color7 = '#eae68e'
-# color8 = '#cfcb55'
-# color9 = '#4b4900'
-# error_color = '#ffb4ab'
-# source_color = '#334b3b'
-# color_fg0 = '#ceca75'
-#
-# [os]
-# disabled = false
-# style = "bg:color4 fg:color5"
-#
-# [os.symbols]
-# Windows = "󰍲"
-# Ubuntu = "󰕈"
-# SUSE = ""
-# Raspbian = "󰐿"
-# Mint = "󰣭"
-# Macos = "󰀵"
-# Manjaro = ""
-# Linux = "󰌽"
-# Gentoo = "󰣨"
-# Fedora = "󰣛"
-# Alpine = ""
-# Amazon = ""
-# Android = ""
-# Arch = "󰣇"
-# Artix = "󰣇"
-# EndeavourOS = ""
-# CentOS = ""
-# Debian = "󰣚"
-# Redhat = "󱄛"
-# RedHatEnterprise = "󱄛"
-# Pop = ""
-#
-# [username]
-# show_always = true
-# style_user = "bg:color4 fg:color5"
-# style_root = "bg:color4 fg:color5"
-# format = '[ $user ]($style)'
-#
-# [directory]
-# style = "fg:color_fg0 bg:color9"
-# format = "[ $path ]($style)"
-# truncation_length = 4
-# truncation_symbol = "…/"
-#
-#
-# [git_branch]
-# symbol = ""
-# style = "bg:color_aqua"
-# format = '[[ $symbol $branch ](fg:color_fg0 bg:color7)]($style)'
-#
-# [time]
-# disabled = false
-# time_format = "%R"
-# style = "bg:color_bg1"
-# format = '[[  $time ](fg:color2 bg:color1)]($style)'
-#
-# [line_break]
-# disabled = false
-#
-# [character]
-# disabled = false
-# success_symbol = '[ ](bold fg:color8)'
-# error_symbol = '[ ](bold fg:error_color)'
-# vimcmd_symbol = '[](bold fg:color_green)'
-# vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-# vimcmd_replace_symbol = '[](bold fg:color_purple)'
-# vimcmd_visual_symbol = '[](bold fg:color_yellow)'
-#
-#
+success_symbol = '[ ](bold fg:color_green)'
+error_symbol = '[ ](bold fg:error_color)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_magenta)'
+vimcmd_replace_symbol = '[](bold fg:color_magenta)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'

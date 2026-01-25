@@ -1,0 +1,100 @@
+# Base16 theme for Yazi
+
+[mgr]
+cwd = { fg = "{{base05}}" }
+
+tab_active = { fg = "{{base00}}", bg = "{{base0D}}", bold = true }
+tab_inactive = { fg = "{{base03}}", bg = "{{base01}}" }
+tab_width = 1
+
+find_keyword = { fg = "{{base08}}", bold = true, italic = true, underline = true }
+find_position = { fg = "{{base08}}", bold = true, italic = true }
+
+marker_copied = { fg = "{{base0C}}", bg = "{{base0C}}" }
+marker_cut = { fg = "{{base08}}", bg = "{{base08}}" }
+marker_marked = { fg = "{{base0E}}", bg = "{{base0E}}" }
+marker_selected = { fg = "{{base0D}}", bg = "{{base0D}}" }
+
+count_copied = { fg = "{{base00}}", bg = "{{base0C}}" }
+count_cut = { fg = "{{base00}}", bg = "{{base08}}" }
+count_selected = { fg = "{{base00}}", bg = "{{base0D}}" }
+
+border_symbol = " "
+border_style  = { fg = "{{base03}}" }
+
+[status]
+separator_open = "🭁"
+separator_close = "🭠"
+separator_style = { bg = "{{base01}}", fg = "{{base09}}" }
+
+[mode]
+normal_main = { bg = "{{base0D}}", fg = "{{base00}}", bold = true }
+normal_alt  = { bg = "{{base02}}", fg = "{{base04}}" }
+
+select_main = { bg = "{{base0E}}", fg = "{{base00}}", bold = true }
+select_alt  = { bg = "{{base02}}", fg = "{{base04}}" }
+
+unset_main = { bg = "{{base0A}}", fg = "{{base00}}", bold = true }
+unset_alt  = { bg = "{{base02}}", fg = "{{base04}}" }
+
+progress_label = { bold = true }
+progress_normal = { fg = "{{base0D}}", bg = "{{base01}}" }
+progress_error = { fg = "{{base08}}", bg = "{{base01}}" }
+
+permissions_t = { fg = "{{base0C}}" }
+permissions_w = { fg = "{{base0A}}" }
+permissions_x = { fg = "{{base08}}" }
+permissions_r = { fg = "{{base0B}}" }
+permissions_s = { fg = "{{base0E}}" }
+
+[select]
+border = { fg = "{{base0D}}" }
+active = { fg = "{{base0A}}", bold = true }
+
+[input]
+border = { fg = "{{base0D}}" }
+value = { fg = "{{base05}}" }
+
+[tabs]
+active = { fg = "{{base0D}}", bold = true, bg = "{{base00}}" }
+inactive = { fg = "{{base04}}", bg = "{{base00}}" }
+sep_inner = { open = "[", close = "]" }
+
+[completion]
+border = { fg = "{{base0D}}", bg = "{{base01}}" }
+
+[tasks]
+border = { fg = "{{base0D}}" }
+title = {}
+hovered = { fg = "{{base0A}}", underline = true }
+
+[which]
+cols = 3
+mask = { bg = "{{base01}}" }
+cand = { fg = "{{base0D}}" }
+rest = { fg = "{{base04}}" }
+desc = { fg = "{{base05}}" }
+separator = " ▶ "
+separator_style = { fg = "{{base05}}" }
+
+[help]
+on = { fg = "{{base05}}" }
+run = { fg = "{{base05}}" }
+footer = { fg = "{{base00}}", bg = "{{base0D}}" }
+
+[notify]
+title_info = { fg = "{{base0C}}" }
+title_warn = { fg = "{{base0A}}" }
+title_error = { fg = "{{base08}}" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "{{base0C}}" },
+    { mime = "{audio,video}/*", fg = "{{base0A}}" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "{{base0E}}" },
+    { mime = "application/{pdf,doc,rtf}", fg = "{{base0B}}" },
+    { name = "*", is = "orphan", bg = "{{base08}}" },
+    { name = "*", is = "exec", fg = "{{base0B}}" },
+    { name = "*", fg = "{{base05}}" },
+    { name = "*/", fg = "{{base0D}}" },
+]

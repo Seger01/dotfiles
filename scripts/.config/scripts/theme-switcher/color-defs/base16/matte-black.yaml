@@ -1,0 +1,19 @@
+palette:
+  base00: "#000000"   # pure black (background)
+  base01: "#020202"   # next-darkest
+  base02: "#171717"   # near-black
+  base03: "#1E1E1F"   # overlay0
+  base04: "#282828"   # subtext0
+
+  base05: "#AEAAAB"  # brighter foreground (from 174,170,171)
+  base06: "#D2D2D2"   # high-brightness secondary fg
+  base07: "#F3F3F3"   # pure white for maximum contrast (not in your input, added for contrast)
+
+  base08: "#B42913"   # red (error)
+  base09: "#DA8D05"   # orange (accent)
+  base0A: "#F3B901"   # yellow (main highlight)
+  base0B: "#927621"   # earthy yellow-green (success)
+  base0C: "#A6AAAB"   # soft pale teal/gray (cyan)
+  base0D: "#81602F"   # gold (blue)
+  base0E: "#8B6621"   # accent magenta (warm highlight, adapted from browns)
+  base0F: "#F3B901"   # extra accent (same as base0A/yellow)

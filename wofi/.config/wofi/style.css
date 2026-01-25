@@ -2,9 +2,9 @@
 
 window {
   margin: 0px;
-  border: 0px none @outline;
+  border: 0px none @base03;
   border-width: 1px;
-  background-color: @surface;
+  background-color: @base00;
   border-radius: 0px;
 }
 
@@ -14,11 +14,11 @@ window {
   padding-left: 5px;
   border: none;
   border-width: 0px;
-  color: @on_surface;
+  color: @base05;
   font-family: Sauce Code Pro Nerd Font;
   font-size: 16px;
   font-weight: 600;
-  background-color: @surface_container;
+  background-color: @base01;
   outline: none;
   border-radius: 0px;
   margin: 5px 5px;
@@ -33,21 +33,21 @@ window {
 #inner-box {
   margin: 0px;
   border: 0px solid transparent;
-  color: @on_surface;
+  color: @base05;
   font-weight: normal;
-  background-color: @surface_container;
+  background-color: @base01;
   border-radius: 4px;
 }
 
 #outer-box {
   margin: 0px;
-  border: 1px solid @primary;
+  border: 1px solid @base0D;
   border-radius: 0px;
-  background-color: @surface;
+  background-color: @base00;
 }
 
 #scroll {
-  background-color: @surface_container;
+  background-color: @base01;
   margin-top: 0px;
   border: none;
   border-radius: 0px;
@@ -65,41 +65,41 @@ window {
 }
 
 #img {
-  background-color: @surface_container;
+  background-color: @base01;
   margin-right: 10px;
   border-radius: 0px;
 }
 
 #text:selected {
-  color: @on_primary_container;
+  color: @base00;
   margin: 0px 0px;
   border: none;
-  border-color: @primary;
+  border-color: @base0D;
   border-width: 0px;
   border-radius: 0px;
-  background-color: @primary_container;
+  background-color: @base0D;
 }
 
 #text {
-  color: @on_surface;
+  color: @base05;
   margin: 0px 0px;
   border: none;
-  border-color: @outline;
+  border-color: @base03;
   border-width: 0px;
   border-radius: 0px;
-  background-color: @surface_container;
+  background-color: @base01;
 }
 
 #entry {
   margin: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: @surface_container;
+  background-color: @base01;
 }
 
 #entry:selected {
   margin: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: @primary_container;
+  background-color: @base0D;
 }

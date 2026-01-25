@@ -149,7 +149,6 @@ notcrit(){
  running command \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish" 
 }
 
-
 alias matlab2025b="~/matlab-docker/matlab.sh 2025b"
 
 alias cdure="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/"

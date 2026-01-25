@@ -1,0 +1,57 @@
+.theme-dark {
+    --accent-h: 210;
+    --accent-s: 50%;
+    --accent-l: 50%;
+
+    --text-normal: {{base05}};
+    --text-muted: {{base04}};
+    --text-faint: {{base03}};
+
+    --background-primary: {{base00}};
+    --background-secondary: {{base01}};
+    --background-modifier-hover: {{base02}};
+    --background-modifier-active-hover: {{base0D}};
+    --background-modifier-message: {{base01}};
+    --background-modifier-form-field: {{base02}};
+
+    --ribbon-background: {{base00}};
+    --divider-color: {{base02}};
+    --scrollbar-thumb-bg: {{base03}};
+    --status-bar-border-color: {{base02}};
+    --status-bar-background: {{base00}};
+    --titlebar-background: {{base00}};
+    --titlebar-text-color: {{base05}};
+
+    --nav-item-color: {{base04}};
+    --nav-item-color-active: {{base0D}};
+    --nav-item-background-active: {{base02}};
+    --nav-item-color-hover: {{base05}};
+    --nav-item-background-hover: {{base02}};
+
+    --tab-background-active: {{base02}};
+    --tab-text-color-active: {{base0D}};
+    --tab-text-color: {{base04}};
+
+    --icon-color: {{base05}};
+
+    --h1-color: {{base0D}};
+    --h2-color: {{base0E}};
+    --h3-color: {{base0A}};
+    --h4-color: {{base0B}};
+    --h5-color: {{base0C}};
+    --h6-color: {{base09}};
+
+    --cursorcolor: var(--h1-color);
+
+    --link-external-color: {{base0C}};
+    --link-external-color-hover: {{base0D}};
+    --link-color: {{base0A}};
+    --link-color-hover: {{base0D}};
+
+    --code-background: {{base01}};
+    --code-normal: {{base0B}};
+    --code-comment: {{base03}};
+    --code-function: {{base0D}};
+    --code-keyword: {{base0E}};
+    --code-string: {{base0B}};
+}

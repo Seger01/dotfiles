@@ -62,10 +62,10 @@ theme_set_dark() {
 
   tmux_append_seto "status-left" "#[bg=#{@thm_primary},fg=#{@thm_surface}] ${_left_status_a} #[bg=#{@thm_surface},fg=#{@thm_primary},nobold,noitalics,nounderscore]"
 
-  # right status
-  local _status_right_bg="#{@thm_surface}"
-  if [[ "$_statusbar_alpha" == "true" ]]; then _status_right_bg="default"; fi
-  tmux_append_seto "status-right" "#[bg=${_status_right_bg},fg=#{@thm_fg},nobold,noitalics,nounderscore]#[bg=#{@thm_fg},fg=#{@thm_surface}] ${_right_status_z}"
+  # # right status
+  # local _status_right_bg="#{@thm_surface}"
+  # if [[ "$_statusbar_alpha" == "true" ]]; then _status_right_bg="default"; fi
+  # tmux_append_seto "status-right" "#[bg=${_status_right_bg},fg=#{@thm_fg},nobold,noitalics,nounderscore]#[bg=#{@thm_fg},fg=#{@thm_surface}] ${_right_status_z}"
 
   # current window
   local _current_window_status_format_bg="#{@thm_surface}"

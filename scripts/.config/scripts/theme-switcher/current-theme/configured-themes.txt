@@ -1,0 +1,16 @@
+black-metal-burzum
+gruvbox-dark
+gruvbox-dark-hard
+gruvbox-dark-medium
+gruvbox-dark-pale
+gruvbox-dark-soft
+gruvbox-light
+gruvbox-light-hard
+gruvbox-light-medium
+gruvbox-light-soft
+icy
+matte-black
+osaka-jade
+reddish
+spaceduck
+tokyo-night-moon
