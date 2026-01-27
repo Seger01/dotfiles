@@ -12,7 +12,8 @@
     "modules-center": [
         "clock",
         "hyprland/workspaces",
-        "wireplumber",
+        "custom/volume",
+        // "wireplumber",
         "battery"
     ],
     "modules-right": [],
@@ -23,9 +24,7 @@
         "tooltip": false
     },
     "clock": {
-        // "timezone": "America/New_York",
         "format": "{:%H:%M} ",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "tooltip": false,
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -46,13 +45,16 @@
             "critical": 15
         },
         // "format": "{capacity}% {icon}",
+        // "tooltip-format": "{capacity}% {icon}",
         "format": "{icon}",
         // "format-charging": "{capacity}% 󱐋",
         "format-charging": "󱐋",
         // "format-plugged": "{capacity}% ",
+        "format-warning": "{capacity}% {icon}",
+        "format-critical": "{capacity}% {icon}",
         // "format-plugged": "",
         "format-plugged": "",
-        "format-alt": "{time} {icon}",
+        "format-alt": "{capacity}% {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [
@@ -62,6 +64,13 @@
             "",
             ""
         ]
+    },
+    "custom/volume": {
+        "exec": "~/.config/scripts/volume-wireplumber.sh",
+        "interval": 1,
+        "return-type": "json",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "tooltip": true
     },
     "wireplumber": {
         // "format": "{volume}% {icon}",

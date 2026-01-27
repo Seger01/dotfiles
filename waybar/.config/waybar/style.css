@@ -2,7 +2,7 @@
 
 * {
     /* font-family: "SauceCodePro Nerd Font Regular", sans-serif;  */
-    font-family: "JetBrainsMono Nerd Font Propo", sans-serif; 
+    font-family: "Rubik", "JetBrainsMono Nerd Font Propo", sans-serif; 
     font-weight: bold; 
     font-size: 18px;
     /* color: @base0D; */
@@ -17,7 +17,7 @@
     padding: 6px 10px 6px 10px;
     margin: 8px 8px 6px 8px;
     border-radius: 28px;
-    box-shadow: 2 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #waybar.empty #window {
@@ -71,6 +71,7 @@ window#waybar {
 #cpu,
 #memory,
 #wireplumber,
+#custom-volume,
 #custom-power {
     padding-left: 10px;
     padding-right: 10px;
@@ -93,6 +94,10 @@ window#waybar {
 
 label:focus {
     color: #FFFFFF;
+}
+
+#custom-volume {
+    color: @base0E;
 }
 
 #wireplumber {
