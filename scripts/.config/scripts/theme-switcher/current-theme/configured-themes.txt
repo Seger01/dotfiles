@@ -1,4 +1,7 @@
 black-metal-burzum
+catppuccin-mocha
+charcoal-light
+e-ink
 gruvbox-dark
 gruvbox-dark-hard
 gruvbox-dark-medium
@@ -9,6 +12,7 @@ gruvbox-light-hard
 gruvbox-light-medium
 gruvbox-light-soft
 icy
+kanagawa
 matte-black
 osaka-jade
 reddish

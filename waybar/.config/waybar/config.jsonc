@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 40, // Fixed height to prevent resizing
+    "height": 51, // Fixed height to prevent resizing
     "spacing": 0, // Gaps between modules (4px)
     "margin-top": 0,
     "margin-right": 0,
@@ -12,8 +12,8 @@
     "modules-center": [
         "clock",
         "hyprland/workspaces",
-        "custom/volume",
         // "wireplumber",
+        "custom/volume",
         "battery"
     ],
     "modules-right": [],
@@ -67,7 +67,7 @@
     },
     "custom/volume": {
         "exec": "~/.config/scripts/volume-wireplumber.sh",
-        "interval": 1,
+        "interval": 0,
         "return-type": "json",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "tooltip": true

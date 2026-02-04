@@ -1,19 +1,19 @@
 /*
 * Css Colors - Base16
 */
-@define-color base00 #000000;
-@define-color base01 #121212;
-@define-color base02 #222222;
-@define-color base03 #333333;
-@define-color base04 #999999;
-@define-color base05 #c1c1c1;
-@define-color base06 #999999;
-@define-color base07 #c1c1c1;
-@define-color base08 #5f8787;
-@define-color base09 #aaaaaa;
-@define-color base0A #99bbaa;
-@define-color base0B #ddeecc;
-@define-color base0C #aaaaaa;
-@define-color base0D #888888;
-@define-color base0E #999999;
-@define-color base0F #444444;
+@define-color base00 #f2e5bc;
+@define-color base01 #ebdbb2;
+@define-color base02 #d5c4a1;
+@define-color base03 #bdae93;
+@define-color base04 #665c54;
+@define-color base05 #504945;
+@define-color base06 #3c3836;
+@define-color base07 #282828;
+@define-color base08 #9d0006;
+@define-color base09 #af3a03;
+@define-color base0A #b57614;
+@define-color base0B #79740e;
+@define-color base0C #427b58;
+@define-color base0D #076678;
+@define-color base0E #8f3f71;
+@define-color base0F #d65d0e;

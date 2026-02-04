@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c04644f6ae63fd09",
+            "id": "d01b9119c8589edc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "todos.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "todos"
+              "title": "index"
             }
           }
         ]
@@ -169,10 +169,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "todos.md"
+                "file": "docs/index.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for todos"
+              "title": "File properties for index"
             }
           }
         ],
@@ -194,32 +194,34 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c04644f6ae63fd09",
+  "active": "d01b9119c8589edc",
   "lastOpenFiles": [
+    "docs/can/CAN Design document.md",
+    "docs/control/Control Design document.md",
+    "docs/control/figures/flowchart_control.png",
+    "docs/control/figures/Control_Architecture_draft.md",
+    "can_design_document.pdf",
     "URE.md",
     "todos.md",
-    "build/management/CMakeFiles/Progress/4",
-    "build/management/CMakeFiles/Progress/3",
-    "build/management/CMakeFiles/Progress/2",
-    "build/management/CMakeFiles/Progress/1",
-    "build/management/CMakeFiles/Progress/count.txt",
-    "build/management/CMakeFiles/Progress",
-    "log/build_2026-01-25_11-31-15/management/streams.log",
-    "log/build_2026-01-25_11-31-15/management/stdout_stderr.log",
-    "log/build_2026-01-25_11-31-15/management/stderr.log",
-    "log/build_2026-01-25_11-31-15/management/stdout.log",
+    "home.md",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/runtime.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/replay.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/raw.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/obs.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/ouster_driver_test.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/legacy.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/vehicle/vehicle.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/telemetry_config/telemetry.yaml",
+    "runtime/logging/run_2026_02_01_19_20_05/configs/telemetry_config/dv_template.xml",
+    "docs/hardware/DV ECU setup guide.md",
+    "README.md",
     "docs/path/Path Finding Design document.md",
-    "docs/control/Control Design document.md",
     "docs/control/figures/flowchart_control.md",
     "docs/control/figures/control_rviz.png",
-    "docs/can/CAN Design document.md",
     "docs/docker/Docker development environment setup and usage guide.md",
-    "docs/hardware/DV ECU setup guide.md",
     "docs/index.md",
     "docs/hardware/Untitled.md",
     "docs/imu/IMU Design document.md",
-    "docs/control/figures/flowchart_control.png",
-    "docs/control/figures/Control_Architecture_draft.md",
     "docs/control/figures/Drawing 2026-01-18 16.10.51.md",
     "docs/control/figures/Drawing 2026-01-18 16.10.51.png",
     "docs/control/figures/Control_Architecture_draft.png",
@@ -239,8 +241,6 @@
     "quartz/node_modules/rxjs/README.md",
     "quartz/node_modules/rxjs/CODE_OF_CONDUCT.md",
     "quartz/node_modules/rxjs/CHANGELOG.md",
-    "quartz/node_modules/typescript/SECURITY.md",
-    "quartz/node_modules/typescript/README.md",
     "Untitled.canvas"
   ]
 }

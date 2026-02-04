@@ -1,7 +1,7 @@
 * {
     all:unset;
     font-family: 'Sauce Code Pro', monospace;
-    font-size: 18px;
+    font-size: 20px;
     outline: none;
     border: none;
     text-shadow:none;
@@ -10,14 +10,14 @@
 
 window {
     all:unset;
-    padding: 2px;
-    border-radius: 0px;
-    background-color: alpha(@base00,.5);
+    padding: 8px;
+    border-radius: 12px;
+    background-color: alpha(@base00,.92);
 }
 
 #inner-box {
-    margin: 0px;
-    padding: 0px;
+    margin: 4px;
+    padding: 4px;
     border: none;
 }
 
@@ -26,22 +26,23 @@ window {
 }
 
 #scroll {
-    margin: 0px;
-    padding: 0px;
+    margin: 4px;
+    padding: 4px;
     border: none;
 }
 
 #input {
     all:unset;
-    margin-left:5px;
-    margin-right:5px;
-    margin-top:5px;
-    padding: 5px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-top:8px;
+    padding: 14px;
     border: none;
     outline: none;
     color: @base05;
+    font-size: 20px;
     box-shadow: 1px 1px 3px rgba(0,0,0, .5);
-    border-radius:2px;
+    border-radius:8px;
     background-color: alpha(@base00,.2);
 }
 
@@ -59,7 +60,7 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    border-radius:0px;
+    border-radius:8px;
 }
 
 #text {
@@ -71,13 +72,13 @@ window {
 
 #entry {
     all:unset;
-    padding: 2 2 2 4;
+    padding: 10px 10px 10px 12px;
 }
 
 #entry image {
     min-width: 200px;
     min-height: 200;
-    padding-right: 15px;
+    padding-right: 22px;
 }
 
 #entry arrow {
@@ -87,7 +88,7 @@ window {
 
 #entry:selected {
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: alpha(@base00,.2);
 }
 

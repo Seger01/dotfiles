@@ -1,5 +1,5 @@
-width=500
-height=300
+width=750
+height=500
 location=center
 columns=1
 show=drun
@@ -14,7 +14,7 @@ content_halign=fill
 orientation=vertical
 insensitive=true
 allow_images=true
-image_size=26
+image_size=32
 gtk_dark=true
 layer=top
 term=kitty
