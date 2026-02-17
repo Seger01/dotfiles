@@ -6,7 +6,7 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CURRENT_THEME_DIR="$SCRIPT_DIR/current-theme"
 BACKGROUNDS_DIR="$SCRIPT_DIR/backgrounds"
-THEME_SCRIPT="$SCRIPT_DIR/theme.sh"
+THEME_SCRIPT="$SCRIPT_DIR/theme.py"
 
 # Read current theme
 if [[ ! -f "$CURRENT_THEME_DIR/current-theme.txt" ]]; then

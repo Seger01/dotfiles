@@ -60,15 +60,15 @@ input_path = 'templates/sddm_theme_copy.sh'
 output_path = '~/.config/scripts/sddm_theme_copy.sh'
 post_hook = '(sleep 2 && sudo /home/seger/.config/scripts/sddm_theme_copy.sh) &'
 
-[[spicetify]]
-input_path = 'templates/spotify-colors.ini'
-output_path = '~/.config/spicetify/Themes/Spicetify-retro/color.ini'
-post_hook = '((spicetify config current_theme Spicetify-retro; spicetify config color_scheme base16; spicetify config inject_theme_js 1; spicetify apply -n; pgrep -x spotify >/dev/null && spicetify restart;) &)'
+# [[spicetify]]
+# input_path = 'templates/spotify-colors.ini'
+# output_path = '~/.config/spicetify/Themes/Spicetify-retro/color.ini'
+# post_hook = '((spicetify config current_theme Spicetify-retro; spicetify config color_scheme base16; spicetify config inject_theme_js 1; spicetify apply -n; pgrep -x spotify >/dev/null && spicetify restart;) &)'
 
 [[folder]]
 input_path = 'templates/folder-color.txt'
 output_path = '~/.config/scripts/theme-switcher/current-theme/folder-color.txt'
-post_hook = 'killall nautilus; nohup ~/.config/scripts/theme-switcher/change-icons.sh >/dev/null 2>&1 &'
+post_hook = 'killall nautilus; nohup ~/.config/scripts/theme-switcher/change_icons.py >/dev/null 2>&1 &'
 
 [[obsidian]]
 input_path = 'templates/obsidian-minimal-colors.css'

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER="/home/seger/.config/scripts/theme-switcher/backgrounds/gruvbox-light*/landscape.png"
+WALLPAPER="/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/spaceduck/wallhaven-e78y9r_2560x1440.png"
 
 cp /home/seger/.config/theme-switcher-sddm/sddm.conf /usr/share/sddm/themes/silent/configs/custom.conf
 

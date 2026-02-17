@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 51, // Fixed height to prevent resizing
+    "height": 40, // Fixed height to prevent resizing
     "spacing": 0, // Gaps between modules (4px)
     "margin-top": 0,
     "margin-right": 0,
@@ -65,9 +65,24 @@
             ""
         ]
     },
+    // "custom/volume": {
+    //     "exec": "/home/seger/.config/scripts/volume-wireplumber.sh",
+    //     "interval": 1,
+    //     "return-type": "json",
+    //     "format": "{}", // ← Add this
+    //     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    //     "tooltip": true
+    // },
+    //
+    // "custom/volume": {
+    //     "exec": "/home/seger/.config/scripts/volume-wireplumber.sh",
+    //     "interval": 1, // Test with 1 second interval first
+    //     "return-type": "json",
+    //     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    //     "tooltip": true
+    // },
     "custom/volume": {
         "exec": "~/.config/scripts/volume-wireplumber.sh",
-        "interval": 0,
         "return-type": "json",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "tooltip": true

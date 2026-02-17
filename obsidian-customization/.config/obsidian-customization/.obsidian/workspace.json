@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "798c15d8176d906e",
+        "id": "1778bb6f4866aec9",
         "type": "tabs",
         "children": [
           {
-            "id": "d01b9119c8589edc",
+            "id": "033444026abedba2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/docker/Docker development environment setup and usage guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Docker development environment setup and usage guide"
             }
           }
         ]
@@ -169,10 +169,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "docs/index.md"
+                "file": "docs/misc/Docker development environment setup and usage guide.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for index"
+              "title": "File properties for Docker development environment setup and usage guide"
             }
           }
         ],
@@ -180,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,53 +195,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d01b9119c8589edc",
+  "active": "033444026abedba2",
   "lastOpenFiles": [
-    "docs/can/CAN Design document.md",
-    "docs/control/Control Design document.md",
-    "docs/control/figures/flowchart_control.png",
-    "docs/control/figures/Control_Architecture_draft.md",
-    "can_design_document.pdf",
-    "URE.md",
-    "todos.md",
-    "home.md",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/runtime.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/replay.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/raw.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/obs.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/ouster_driver_test.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/main_config/modes/legacy.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/vehicle/vehicle.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/telemetry_config/telemetry.yaml",
-    "runtime/logging/run_2026_02_01_19_20_05/configs/telemetry_config/dv_template.xml",
-    "docs/hardware/DV ECU setup guide.md",
-    "README.md",
-    "docs/path/Path Finding Design document.md",
-    "docs/control/figures/flowchart_control.md",
-    "docs/control/figures/control_rviz.png",
+    "docker/README.md",
     "docs/docker/Docker development environment setup and usage guide.md",
     "docs/index.md",
-    "docs/hardware/Untitled.md",
-    "docs/imu/IMU Design document.md",
-    "docs/control/figures/Drawing 2026-01-18 16.10.51.md",
-    "docs/control/figures/Drawing 2026-01-18 16.10.51.png",
+    "docs/can/CAN Design document.md",
+    "docs/hardware/DV ECU setup guide.md",
+    "docs/hardware",
+    "docs/docker",
+    "docs/misc/Gitlab CI setup.md",
+    "docs/misc",
+    "docs/documentation/Hardware Document Template.md",
+    "docs/documentation/Development Guide Template.md",
+    "docs/documentation/Documentation guide.md",
+    "docs/documentation/Design Document Template.md",
+    "docs/documentation",
+    "docs/can",
+    "docs/yaml_parser/Yaml Parser Design document.md",
+    "docs/yaml_parser",
+    "docs/vehicle/Vehicle Design document.md",
+    "docs/vehicle",
+    "docs/track/Track Detection Design document.md",
+    "docs/track",
+    "docs/telemetry/figures/URE_20 DV_Live_Telemetry - Page 1.jpeg",
+    "docs/telemetry/figures/Pasted image 20260205101852.png",
+    "docs/telemetry/figures",
+    "docs/telemetry/Telemetry Design document.md",
+    "docs/telemetry",
+    "docs/control/figures/flowchart_control.png",
+    "docs/control/figures/flowchart_control.md",
+    "docs/control/figures/control_rviz.png",
     "docs/control/figures/Control_Architecture_draft.png",
-    "docs/control/figures/test_diagram.md",
+    "docs/control/figures/Control_Architecture_draft.md",
     "docs/control/figures/ControlNodeArchitectureDraft.png",
-    "docs/control/figures/test_diagram.png",
-    "docs/control/figures/control_viz_1.png",
+    "docs/system/System module Design document.md",
+    "docs/slam/SLAM Design document.md",
+    "docs/path/Path Finding Design document.md",
+    "docs/ouster/Ouster Design document.md",
+    "docs/imu/IMU Design document.md",
+    "docs/fusion/Fusion Design document.md",
+    "docs/control/Control Design document.md",
+    "tools/monitoring/README.md",
     "src/9_ros/control/control_node/README.md",
-    "quartz/public/yaml_parser/Yaml-Parser-Design-document-og-image.webp",
-    "quartz/public/vehicle/Vehicle-Design-document-og-image.webp",
-    "quartz/public/track/Track-Detection-Design-document-og-image.webp",
-    "Control System Design document.md",
-    "quartz/content/index.md",
-    "quartz/node_modules/pixi.js/README.md",
-    "quartz/node_modules/mathjax-full/README.md",
-    "quartz/node_modules/mathjax-full/CONTRIBUTING.md",
-    "quartz/node_modules/rxjs/README.md",
-    "quartz/node_modules/rxjs/CODE_OF_CONDUCT.md",
-    "quartz/node_modules/rxjs/CHANGELOG.md",
+    "docs/misc/Docker development environment setup and usage guide.md",
+    "control/tools/documents/design/lookahead.png",
+    "control/tools/documents/design/Pipeline Overview.png",
+    "control/docs/control/figures/flowchart_control.png",
+    "control/docs/control/figures/control_rviz.png",
     "Untitled.canvas"
   ]
 }

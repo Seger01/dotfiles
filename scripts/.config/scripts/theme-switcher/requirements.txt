@@ -1,0 +1,8 @@
+# Python dependencies for theme-switcher
+# Install with: pip install -r requirements.txt
+
+# YAML parsing for color definitions
+PyYAML>=6.0
+
+# TOML parsing for config.toml (Python 3.11+ has tomllib built-in)
+tomli>=2.0.0; python_version < "3.11"

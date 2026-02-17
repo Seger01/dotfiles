@@ -1,4 +1,3 @@
-# theme = "matugen"
 theme = "default"
 login_redirect_uri = "http://127.0.0.1:8989/login"
 client_port = 8080
@@ -21,8 +20,8 @@ play_icon = "▶"
 pause_icon = "▌▌"
 liked_icon = "♥"
 genre_num = 2
-cover_img_length = 9
-cover_img_width = 5
+cover_img_length = 16
+cover_img_width = 8
 cover_img_pixels = 16
 seek_duration_secs = 5
 

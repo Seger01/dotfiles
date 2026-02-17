@@ -4,7 +4,7 @@
 # Shows configured themes and applies selected theme
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-THEME_SCRIPT="$SCRIPT_DIR/theme.sh"
+THEME_SCRIPT="$SCRIPT_DIR/theme.py"
 CONFIGURED_THEMES_FILE="$SCRIPT_DIR/current-theme/configured-themes.txt"
 
 # Check if the themes file exists and has content

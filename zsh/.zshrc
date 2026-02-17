@@ -122,6 +122,22 @@ alias dkrcleanupfull="docker system prune -a"
 
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
+# Kill Hyprland window by clicking
+pew() {
+    local addr=$(hyprprop | awk -F'"' '/"address":/ {print $4}')
+    if [ -n "$addr" ]; then
+        local pid=$(hyprctl clients -j | jq -r ".[] | select(.address == \"$addr\") | .pid")
+        if [ -n "$pid" ]; then
+            echo "Force killing PID: $pid"
+            kill -9 $pid
+        else
+            echo "Error: Could not find PID"
+        fi
+    else
+        echo "Error: Could not capture window address"
+    fi
+}
+
 export PATH=$PATH:~/.bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.config/scripts
 
 export EDITOR='nvim'
@@ -150,6 +166,8 @@ notcrit(){
 }
 
 alias matlab2025b="~/matlab-docker/matlab.sh 2025b"
+
+alias comp_login="sshpass -p LNYQSWJJvA4= ssh -Y pcp26003@co26.ics.ele.tue.nl"
 
 alias cdure="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/"
 alias cdureme="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer "

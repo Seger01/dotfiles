@@ -1,20 +1,41 @@
 palette:
-  base00: "#111C18"   # background
-  base01: "#23372B"   # black dark shade, surface0
-  base02: "#53685B"   # black light shade, surface1
-  base03: "#C1C497"   # overlay0, soft contrast (selection bg in theme, good highlight)
-  base04: "#F6F5DD"   # subtext0, bright white
-  base05: "#C1C497"   # main foreground, text
-  base06: "#D7C995"   # cursor color—good as rosewater (accent/secondary foreground)
-  base07: "#9EEBB3"   # bright accent, pale green/white crossover (lavender)
-  base08: "#0F744D"   # ANSI red, error, alert
-  base09: "#1A8C5B"   # peach, soft red, highlight
-  base0A: "#E5C736"   # yellow, text warning/accent
-  base0B: "#549e6a"   # green, success/accent
-  base0C: "#2DD5B7"   # cyan, info/highlight
-  base0D: "#0B985C"   # blue/accent, matches theme accent
-  base0E: "#185F44"   # magenta, strong
-  base0F: "#75bbb3"   # flamingo, blue-2, extra accent
+  base00: "#111C18"   
+  base01: "#23372B"   
+  base02: "#53685B"   
+  base03: "#8FA891"
+  base04: "#F6F5DD"   
+  base05: "#C1C497"   
+  base06: "#D7C995"   
+  base07: "#9EEBB3"   
+  base08: "#FF5345"
+  base09: "#1A8C5B"   
+  base0A: "#E5C736"   
+  base0B: "#549e6a"   
+  base0C: "#2DD5B7"   
+  base0D: "#75BBB3"
+  base0E: "#0B985C"   
+  # base0E: "#185F44" 
+  base0F: "#9EEBB3"
+  # base08: "#0F744D" 
+  # base0F: "#75bbb3" 
+
+# palette:
+#   base00: "#111C18"
+#   base01: "#23372B"
+#   base02: "#53685B"
+#   base03: "#509475"
+#   base04: "#ACD4CF"
+#   base05: "#C1C497"
+#   base06: "#D7C995"
+#   base07: "#F6F5DD"
+#   base08: "#FF5345"
+#   base09: "#DB9F9C"
+#   base0A: "#E5C736"
+#   base0B: "#549E6A"
+#   base0C: "#2DD5B7"
+#   base0D: "#75BBB3"
+#   base0E: "#D2689C"
+#   base0F: "#9EEBB3"
 
 # /* CSS HEX */
 # --turf-green: #0F744D;

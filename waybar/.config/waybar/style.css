@@ -15,7 +15,7 @@
     background: @base01;
     /* background: #FFFFFF; */
     padding: 6px 10px 6px 10px;
-    margin: 8px 8px 6px 8px;
+    margin: 8px 8px 0px 8px;
     border-radius: 28px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -86,7 +86,7 @@ window#waybar {
 #battery.plugged,
 #battery {
     color: @base0B;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 #battery.critical:not(.charging) {
@@ -98,7 +98,7 @@ label:focus {
 }
 
 #custom-volume {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: @base0E;
 }
 
