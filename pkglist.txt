@@ -7,6 +7,7 @@ base
 base-devel
 bat
 bc
+blender
 blueman
 bluez
 bluez-utils
@@ -14,6 +15,7 @@ brightnessctl
 btop
 btrfs-progs
 chatty
+chromium
 cloc
 cmake
 cmus
@@ -34,7 +36,6 @@ eza
 fastfetch
 fd
 file-roller
-firefox
 fzf
 gdm
 ghex
@@ -64,6 +65,7 @@ gnome-menus
 gnome-mines
 gnome-music
 gnome-nibbles
+gnome-pomodoro-git
 gnome-remote-desktop
 gnome-robots
 gnome-session
@@ -82,6 +84,7 @@ grilo-plugins
 grim
 grub
 gst-plugin-pipewire
+gtkwave
 gvfs
 gvfs-afc
 gvfs-dnssd
@@ -102,6 +105,7 @@ hyprpicker
 hyprpolkitagent
 hyprprop-git
 hyprshot
+hyprsunset
 intel-media-driver
 iwd
 kio-admin
@@ -138,13 +142,13 @@ nautilus
 neovim
 network-manager-applet
 networkmanager
-nodejs
 notcurses
 npm
 nwg-look
 obs-studio
 obsidian
 openbsd-netcat
+opencode
 opusfile
 orca
 pacman-contrib
@@ -160,10 +164,12 @@ polkit-kde-agent
 power-profiles-daemon
 python-eduvpn-client
 python-pdftotext
+python-tomli
 python-yaml
 qt5-wayland
 qt6-wayland
 quadrapassel
+rclone
 rofi
 rygel
 samba
@@ -180,6 +186,7 @@ spicetify-cli
 spotify-launcher
 spotify-player
 sqlitebrowser
+sshpass
 starship
 steam
 stow
@@ -226,6 +233,7 @@ ttf-sourcecodepro-nerd
 unrar
 unzip
 uwsm
+ventoy-bin
 vim
 virtualbox
 virtualbox-guest-iso
@@ -237,6 +245,7 @@ wget
 wireless_tools
 wireplumber
 wofi
+wtype
 xdg-desktop-portal-gnome
 xdg-desktop-portal-hyprland
 xdg-user-dirs-gtk
