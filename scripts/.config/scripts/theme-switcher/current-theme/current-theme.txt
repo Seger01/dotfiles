@@ -1,1 +1,1 @@
-spaceduck
+gruvbox-light-soft

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-yay -Qqe > pkglist.txt
+yay -Qqett > pkglist.txt
