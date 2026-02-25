@@ -1,1 +1,1 @@
-/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-light*/a_rocket_launching_in_the_sky.png
+/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-dark*/house-garden.png

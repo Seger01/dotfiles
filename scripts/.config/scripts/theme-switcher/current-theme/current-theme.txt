@@ -1,1 +1,1 @@
-gruvbox-light-soft
+gruvbox-dark-soft

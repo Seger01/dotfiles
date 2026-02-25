@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER="/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-light*/a_rocket_launching_in_the_sky.png"
+WALLPAPER="/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-dark*/house-garden.png"
 
 cp /home/seger/.config/theme-switcher-sddm/sddm.conf /usr/share/sddm/themes/silent/configs/custom.conf
 
