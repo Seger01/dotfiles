@@ -122,6 +122,9 @@ alias dkrcleanupfull="docker system prune -a"
 
 alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
+alias forcebrightdown='hyprctl hyprsunset gamma -10'
+alias forcebrightup='hyprctl hyprsunset gamma +10'
+
 # Kill Hyprland window by clicking
 pew() {
     local addr=$(hyprprop | awk -F'"' '/"address":/ {print $4}')
