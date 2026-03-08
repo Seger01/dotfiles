@@ -60,10 +60,10 @@ input_path = 'templates/sddm_theme_copy.sh'
 output_path = '~/.config/scripts/sddm_theme_copy.sh'
 post_hook = '(sleep 2 && sudo /home/seger/.config/scripts/sddm_theme_copy.sh) &'
 
-# [[spicetify]]
-# input_path = 'templates/spotify-colors.ini'
-# output_path = '~/.config/spicetify/Themes/Spicetify-retro/color.ini'
-# post_hook = '((spicetify config current_theme Spicetify-retro; spicetify config color_scheme base16; spicetify config inject_theme_js 1; spicetify apply -n; pgrep -x spotify >/dev/null && spicetify restart;) &)'
+[[spicetify]]
+input_path = 'templates/spotify-colors.ini'
+output_path = '~/.config/spicetify/Themes/Dribbblish/color.ini'
+post_hook = '((spicetify config current_theme Dribbblish; spicetify config color_scheme base16; spicetify config inject_theme_js 1; spicetify apply -n; pgrep -x spotify >/dev/null && spicetify restart;) &)'
 
 [[folder]]
 input_path = 'templates/folder-color.txt'

@@ -1,5 +1,8 @@
 rm -rf ~/.config/spicetify/Backup
 rm -rf ~/.config/spicetify/Extracted
 
-rm -rf ~/.local/share/spotify-launcher
-rm -rf ~/.cache/spotify ~/.cache/spotify-player
+spicetify config spotify_path "$HOME/.local/share/spotify-launcher/install/usr/share/spotify"
+
+spicetify backup apply
+spicetify update
+spicetify restore backup apply

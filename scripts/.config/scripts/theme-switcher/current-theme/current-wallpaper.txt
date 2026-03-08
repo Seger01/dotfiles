@@ -1,1 +1,0 @@
-/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-dark*/house-garden.png

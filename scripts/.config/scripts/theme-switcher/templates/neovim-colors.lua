@@ -38,7 +38,7 @@ vim.api.nvim_set_hl(0, 'Visual', {
 })
 
 set_hl_multiple({ 'TSComment', 'Comment' }, {
-    fg = '{{base03}}',
+    fg = '{{base04}}',
 })
 
 set_hl_multiple({ 'TSMethod', 'Method' }, {

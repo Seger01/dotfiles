@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER="/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/gruvbox-dark*/house-garden.png"
+WALLPAPER="/home/seger/.dotfiles/scripts/.config/scripts/theme-switcher/backgrounds/tokyo-night-moon/yosemite.png"
 
 cp /home/seger/.config/theme-switcher-sddm/sddm.conf /usr/share/sddm/themes/silent/configs/custom.conf
 
