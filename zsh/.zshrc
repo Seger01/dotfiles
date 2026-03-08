@@ -145,6 +145,8 @@ export PAGER='bat'
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORM=wayland
 export XDG_CURRENT_DESKTOP=hyprland
+# export FZF_DEFAULT_OPTS="--color=bg+:-1,bg:-1,spinner:-1,hl:-1,fg:-1,header:-1,info:-1,pointer:-1,marker:-1,fg+:-1,prompt:-1,hl+:-1"
+export FZF_DEFAULT_OPTS="--color=16"
 
 mkcd() {
     mkdir -p "${1}"

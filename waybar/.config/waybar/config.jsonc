@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 40, // Fixed height to prevent resizing
+    "height": 53, // Fixed height to prevent resizing
     "spacing": 0, // Gaps between modules (4px)
     "margin-top": 0,
     "margin-right": 0,

@@ -1,0 +1,38 @@
+system: "base16"
+name: "URE"
+variant: "dark"
+palette:
+  base00: "#231a0d"  # ----        (r:2,   g:1,   b:1)   deepest black
+  base01: "#332614"  # ---         (r:33,  g:31,  b:31)  very dark gray-brown
+  base02: "#6a4e29"
+  base03: "#8f6c41"
+  base04: "#b48b59"
+  base05: "#d9a971"
+  base06: "#ffc88a"
+  base07: "#f9f9fe"
+  base08: "#9b4c16"  # red         (r:155, g:76,  b:22)  burnt orange-red
+  base09: "#F28D35"  # orange      (r:177, g:104, b:45)  warm amber
+  base0A: "#4a7a9b"  # aqua/cyan   muted teal-blue (complementary cool)
+  base0B: "#2e4a63"  # blue        dark steel blue (complementary)
+  # base0A: "#ad6a3e"  # yellow      (r:173, g:106, b:62)  tan-copper
+  # base0B: "#9a5127"  # green       (r:154, g:81,  b:39)  earthy sienna
+  base0C: "#b16f3e"  # aqua/cyan   (r:177, g:104, b:45)  warm amber (brightest warm)
+  base0D: "#9b4c16"  # blue        (r:155, g:76,  b:22)  mid rust
+  base0E: "#ad6a3e"  # purple      (r:173, g:106, b:62)  copper tan
+  base0F: "#601c06"  # brown       (r:96,  g:28,  b:6)   dark rust anchor
+  # base00: "#020101"  # ----        (r:2,   g:1,   b:1)   deepest black
+  # base01: "#21201f"  # ---         (r:33,  g:31,  b:31)  very dark gray-brown
+  # base02: "#403e3c"  # --          (r:53,  g:19,  b:12)  dark reddish brown
+  # base03: "#3b3938"  # -           (r:59,  g:57,  b:56)  muted dark gray
+  # base04: "#756f6d"  # +           (r:117, g:111, b:109) medium gray
+  # base05: "#c3c3c3"  # ++          (r:195, g:195, b:195) light gray
+  # base06: "#c3c3c3"  # +++         (r:195, g:195, b:195) light gray (closest available)
+  # base07: "#c3c3c3"  # ++++        (r:195, g:195, b:195) lightest available
+  # base08: "#771702"  # red         (r:119, g:35,  b:2)   deep red-rust
+  # base09: "#F28D35"  # orange      (r:155, g:76,  b:22)  burnt orange
+  # base0A: "#b16f3e"  # yellow      (r:177, g:104, b:45)  warm amber/tan
+  # base0B: "#9a5127"  # green       (r:154, g:81,  b:39)  earthy sienna (no true green)
+  # base0C: "#ad6a3e"  # aqua/cyan   (r:173, g:106, b:62)  warm tan-copper
+  # base0D: "#601c06"  # blue        (r:96,  g:28,  b:6)   dark rust
+  # base0E: "#892207"  # purple      (r:137, g:55,  b:8)   deep ember
+  # base0F: "#4a1609"  # brown       (r:74,  g:22,  b:9)   dark sienna
