@@ -7,9 +7,13 @@ post_hook = 'pkill -SIGUSR1 kitty'
 input_path = 'templates/hyprpaper.conf'
 output_path = '~/.config/hypr/hyprpaper.conf'
 
-[[hyprland]]
+[[oldhyprland]]
 input_path = 'templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
+
+[[hyprland]]
+input_path = 'templates/hypr-colors.lua'
+output_path = '~/.config/hypr/hyprland/hypr-colors.lua'
 post_hook = '~/.config/scripts/hypr_reload_lid.sh'
 
 [[waybar]]

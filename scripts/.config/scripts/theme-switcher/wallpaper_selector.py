@@ -58,8 +58,10 @@ def find_wallpaper(theme_name: str, backgrounds_dir: Path) -> Optional[Path]:
     
     Priority:
     1. Exact theme name match
-    2. Wildcard directory match (e.g., "gruvbox-*" matches "gruvbox-dark-hard")
+    2. Pattern directory match (e.g., atelier-*-light matches all atelier-* themes)
     3. Default directory
+    
+    Backgrounds directories may use '*' and '?' wildcards in their names.
     
     Args:
         theme_name: Name of the theme
@@ -79,18 +81,18 @@ def find_wallpaper(theme_name: str, backgrounds_dir: Path) -> Optional[Path]:
             return wallpaper
     
     # 2. Check for wildcard matches
+    import fnmatch
     for subdir in backgrounds_dir.iterdir():
         if not subdir.is_dir():
             continue
-        
         dirname = subdir.name
-        # If directory ends with *, treat it as a wildcard pattern
-        if dirname.endswith('*'):
-            pattern = dirname[:-1]  # Remove trailing *
-            if theme_name.startswith(pattern):
+        # If directory name contains a wildcard, use fnmatch
+        if '*' in dirname or '?' in dirname:
+            if fnmatch.fnmatch(theme_name, dirname):
                 wallpaper = select_random_wallpaper(subdir)
                 if wallpaper:
                     return wallpaper
+    # (prefix wildcard logic removed, now any glob-like pattern is supported)
     
     # 3. Fall back to default directory
     default_dir = backgrounds_dir / 'default'

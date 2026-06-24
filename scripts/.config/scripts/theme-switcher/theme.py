@@ -26,6 +26,34 @@ from wallpaper_set import set_wallpaper
 class ThemeManager:
     """Manager for theme operations."""
 
+    def find_wallpaper_dir(self, theme_name: str) -> Optional[Path]:
+        """
+        Find the wallpaper directory for the given theme, supporting glob/wildcard patterns.
+        Returns the Path to the first match or None if not found.
+        """
+        if not self.backgrounds_dir.exists():
+            return None
+
+        # Exact match
+        exact_match = self.backgrounds_dir / theme_name
+        if exact_match.exists() and exact_match.is_dir():
+            return exact_match
+
+        # Pattern match
+        import fnmatch
+        for subdir in self.backgrounds_dir.iterdir():
+            if not subdir.is_dir():
+                continue
+            dirname = subdir.name
+            if '*' in dirname or '?' in dirname:
+                if fnmatch.fnmatch(theme_name, dirname):
+                    return subdir
+        # Default
+        default_dir = self.backgrounds_dir / 'default'
+        if default_dir.exists() and default_dir.is_dir():
+            return default_dir
+        return None
+
     def __init__(self):
         """Initialize the theme manager with paths."""
         self.script_dir = Path(__file__).parent.resolve()
@@ -57,6 +85,7 @@ class ThemeManager:
     def has_wallpaper(self, theme_name: str) -> bool:
         """
         Check if a theme has a configured wallpaper.
+        Supports wildcards in backgrounds directory names, e.g. 'atelier-*-light'.
 
         Args:
             theme_name: Name of the theme
@@ -72,15 +101,15 @@ class ThemeManager:
         if exact_match.exists() and exact_match.is_dir():
             return True
 
-        # Check for wildcard match
+        # Check for wildcard pattern match (supports * and ? wildcards)
+        import fnmatch
         for subdir in self.backgrounds_dir.iterdir():
             if not subdir.is_dir():
                 continue
 
             dirname = subdir.name
-            if dirname.endswith('*'):
-                pattern = dirname[:-1]
-                if theme_name.startswith(pattern):
+            if '*' in dirname or '?' in dirname:
+                if fnmatch.fnmatch(theme_name, dirname):
                     return True
 
         return False
@@ -160,6 +189,7 @@ class ThemeManager:
     def apply_theme(self, theme_name: str, wallpaper_filename: Optional[str] = None) -> None:
         """
         Apply a theme.
+        Supports wildcards in backgrounds directory names for matching (e.g., atelier-*-light).
 
         Args:
             theme_name: Name of the theme to apply
@@ -183,15 +213,15 @@ class ThemeManager:
             if (self.backgrounds_dir / theme_name).exists():
                 wallpaper = self.backgrounds_dir / theme_name / wallpaper_filename
             else:
-                # Check for wildcard match
+                # Check for wildcard/pattern match (supports * and ? wildcards)
+                import fnmatch
                 for subdir in self.backgrounds_dir.iterdir():
                     if not subdir.is_dir():
                         continue
 
                     dirname = subdir.name
-                    if dirname.endswith('*'):
-                        pattern = dirname[:-1]
-                        if theme_name.startswith(pattern):
+                    if '*' in dirname or '?' in dirname:
+                        if fnmatch.fnmatch(theme_name, dirname):
                             wallpaper = subdir / wallpaper_filename
                             break
 
@@ -223,6 +253,19 @@ class ThemeManager:
 
         # Parse color definitions
         colors, variant = parse_color_yaml(color_file)
+
+        # Set GNOME color scheme based on variant
+        color_scheme = 'prefer-dark' if variant == 'dark' else 'prefer-light'
+        try:
+            subprocess.run(
+                ['gsettings', 'set', 'org.gnome.desktop.interface', 'color-scheme', color_scheme],
+                check=True,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            print(f"  Set GNOME color scheme: {color_scheme}")
+        except subprocess.CalledProcessError:
+            print("  Warning: Failed to set GNOME color scheme", file=sys.stderr)
 
         # Parse config
         apps = self.parse_config()
@@ -330,10 +373,20 @@ def main():
         wallpaper_filename = sys.argv[3] if len(sys.argv) > 3 else None
         manager.apply_theme(theme_name, wallpaper_filename)
 
+    elif command == 'find-wallpaper-dir':
+        if len(sys.argv) < 3:
+            print("Usage: theme.py find-wallpaper-dir <theme-name>", file=sys.stderr)
+            sys.exit(1)
+        theme_name = sys.argv[2]
+        folder = manager.find_wallpaper_dir(theme_name)
+        if folder:
+            print(folder)
+        else:
+            sys.exit(1)
     else:
         print(f"Unknown command: {command}", file=sys.stderr)
         sys.exit(1)
-
-
+    
 if __name__ == '__main__':
     main()
+

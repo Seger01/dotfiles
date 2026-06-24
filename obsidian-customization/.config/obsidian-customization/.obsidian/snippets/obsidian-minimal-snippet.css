@@ -1,57 +1,225 @@
-.theme-dark {
+.theme-dark,
+.theme-light {
     --accent-h: 210;
     --accent-s: 50%;
     --accent-l: 50%;
 
-    --text-normal: #828bb8;
-    --text-muted: #636da6;
-    --text-faint: #3b4261;
+    --text-normal: #CCCCCC;
+    --text-muted: #CCCCCC;
+    --text-faint: #CCCCCC;
 
-    --background-primary: #222436;
-    --background-secondary: #1e2030;
-    --background-modifier-hover: #2d3f76;
-    --background-modifier-active-hover: #82aaff;
-    --background-modifier-message: #1e2030;
-    --background-modifier-form-field: #2d3f76;
+    --background-primary: #333333;
+    --background-secondary: #333333;
+    --background-modifier-hover: #474747;
+    --background-modifier-active-hover: #CCCCCC;
+    --background-modifier-message: #333333;
+    --background-modifier-form-field: #474747;
 
-    --ribbon-background: #222436;
-    --divider-color: #2d3f76;
-    --scrollbar-thumb-bg: #3b4261;
-    --status-bar-border-color: #2d3f76;
-    --status-bar-background: #222436;
-    --titlebar-background: #222436;
-    --titlebar-text-color: #828bb8;
+    --ribbon-background: #333333;
+    --divider-color: #474747;
+    --scrollbar-thumb-bg: #CCCCCC;
+    --status-bar-border-color: #474747;
+    --status-bar-background: #333333;
+    --titlebar-background: #333333;
+    --titlebar-text-color: #CCCCCC;
 
-    --nav-item-color: #636da6;
-    --nav-item-color-active: #82aaff;
-    --nav-item-background-active: #2d3f76;
-    --nav-item-color-hover: #828bb8;
-    --nav-item-background-hover: #2d3f76;
+    --nav-item-color: #CCCCCC;
+    --nav-item-color-active: #CCCCCC;
+    --nav-item-background-active: #474747;
+    --nav-item-color-hover: #CCCCCC;
+    --nav-item-background-hover: #474747;
 
-    --tab-background-active: #2d3f76;
-    --tab-text-color-active: #82aaff;
-    --tab-text-color: #636da6;
+    --tab-background-active: #474747;
+    --tab-text-color-active: #CCCCCC;
+    --tab-text-color: #CCCCCC;
 
-    --icon-color: #828bb8;
+    --icon-color: #CCCCCC;
 
-    --h1-color: #82aaff;
-    --h2-color: #fca7ea;
-    --h3-color: #ffdf77;
-    --h4-color: #c3e88d;
-    --h5-color: #86e1fc;
-    --h6-color: #ffc777;
+    --h1-color: #CCCCCC;
+    --h2-color: #CCCCCC;
+    --h3-color: #CCCCCC;
+    --h4-color: #CCCCCC;
+    --h5-color: #CCCCCC;
+    --h6-color: #CCCCCC;
 
     --cursorcolor: var(--h1-color);
 
-    --link-external-color: #86e1fc;
-    --link-external-color-hover: #82aaff;
-    --link-color: #ffdf77;
-    --link-color-hover: #82aaff;
+    --link-external-color: #CCCCCC;
+    --link-external-color-hover: #CCCCCC;
+    --link-color: #CCCCCC;
+    --link-color-hover: #CCCCCC;
 
-    --code-background: #1e2030;
-    --code-normal: #c3e88d;
-    --code-comment: #3b4261;
-    --code-function: #82aaff;
-    --code-keyword: #fca7ea;
-    --code-string: #c3e88d;
+    --code-background: #333333;
+    --code-normal: #CCCCCC;
+    --code-comment: #CCCCCC;
+    --code-function: #CCCCCC;
+    --code-keyword: #CCCCCC;
+    --code-string: #CCCCCC;
+}
+
+@media print {
+  @page {
+    /* margin: 0; */
+    size: auto;
+  }
+
+  .print .markdown-preview-view {
+    -webkit-print-color-adjust: exact;
+    color: #000000; /* Adjust to desired text color */
+  }
+
+  :root,
+  body,
+  .theme-dark,
+  .theme-light,
+  .markdown-rendered,
+  .markdown-preview-view,
+  .print .markdown-preview-view {
+    --text-normal: #CCCCCC;
+    --text-muted: #CCCCCC;
+    --text-faint: #CCCCCC;
+    --background-primary: #333333;
+    --background-secondary: #333333;
+    --divider-color: #474747;
+    --h1-color: #CCCCCC;
+    --h2-color: #CCCCCC;
+    --h3-color: #CCCCCC;
+    --h4-color: #CCCCCC;
+    --h5-color: #CCCCCC;
+    --h6-color: #CCCCCC;
+    --link-color: #CCCCCC;
+    --link-external-color: #CCCCCC;
+    --code-background: #333333;
+    --code-normal: #CCCCCC;
+  }
+
+  html,
+  body,
+  .markdown-rendered,
+  .markdown-preview-view,
+  .print .markdown-preview-view,
+  .markdown-preview-sizer {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+  }
+
+  /* html, */
+  /* body { */
+  /*   margin: 0 !important; */
+  /*   padding: 0 !important; */
+  /* } */
+
+  /* body { */
+  /*   /* padding: 14mm 16mm !important; */ */
+  /*   box-sizing: border-box !important; */
+  /* } */
+
+  .markdown-preview-view,
+  .print .markdown-preview-view,
+  /* .markdown-preview-sizer { */
+  /*   margin: 0 !important; */
+  /*   padding: 0 !important; */
+  /*   box-sizing: border-box !important; */
+  /*   max-width: none !important; */
+  /* } */
+
+  .markdown-rendered h1,
+  .markdown-preview-view h1,
+  .print .markdown-preview-view h1 {
+    color: var(--h1-color) !important;
+  }
+
+  .markdown-rendered h2,
+  .markdown-preview-view h2,
+  .print .markdown-preview-view h2 {
+    color: var(--h2-color) !important;
+  }
+
+  .markdown-rendered h3,
+  .markdown-preview-view h3,
+  .print .markdown-preview-view h3 {
+    color: var(--h3-color) !important;
+  }
+
+  .markdown-rendered h4,
+  .markdown-preview-view h4,
+  .print .markdown-preview-view h4 {
+    color: var(--h4-color) !important;
+  }
+
+  .markdown-rendered h5,
+  .markdown-preview-view h5,
+  .print .markdown-preview-view h5 {
+    color: var(--h5-color) !important;
+  }
+
+  .markdown-rendered h6,
+  .markdown-preview-view h6,
+  .print .markdown-preview-view h6 {
+    color: var(--h6-color) !important;
+  }
+
+  .markdown-rendered a,
+  .markdown-preview-view a,
+  .print .markdown-preview-view a {
+    color: var(--link-color) !important;
+  }
+
+  .markdown-rendered a.external-link,
+  .markdown-preview-view a.external-link,
+  .print .markdown-preview-view a.external-link {
+    color: var(--link-external-color) !important;
+  }
+
+  .markdown-rendered code,
+  .markdown-preview-view code,
+  .print .markdown-preview-view code {
+    background-color: var(--code-background) !important;
+    color: var(--code-normal) !important;
+  }
+
+  .markdown-rendered pre,
+  .markdown-preview-view pre,
+  .print .markdown-preview-view pre,
+  .markdown-rendered blockquote,
+  .markdown-preview-view blockquote,
+  .print .markdown-preview-view blockquote {
+    background-color: var(--background-secondary) !important;
+  }
+
+  .markdown-rendered blockquote,
+  .markdown-preview-view blockquote,
+  .print .markdown-preview-view blockquote {
+    border-left: 4px solid var(--divider-color) !important;
+    color: var(--text-muted) !important;
+  }
+
+  .markdown-rendered hr,
+  .markdown-preview-view hr,
+  .print .markdown-preview-view hr,
+  .markdown-rendered table,
+  .markdown-rendered th,
+  .markdown-rendered td,
+  .markdown-preview-view table,
+  .markdown-preview-view th,
+  .markdown-preview-view td,
+  .print .markdown-preview-view table,
+  .print .markdown-preview-view th,
+  .print .markdown-preview-view td {
+    border-color: var(--divider-color) !important;
+  }
+
+  .markdown-rendered th,
+  .markdown-preview-view th,
+  .print .markdown-preview-view th {
+    background-color: var(--background-secondary) !important;
+  }
+
+  /* make horizontal line appear as page break when exporting to pdf */
+  hr {
+    visibility: hidden;
+    page-break-before: always;
+  }
 }

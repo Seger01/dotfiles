@@ -1,4 +1,5 @@
-.theme-dark {
+.theme-dark,
+.theme-light {
     --accent-h: 210;
     --accent-s: 50%;
     --accent-l: 50%;
@@ -54,4 +55,171 @@
     --code-function: {{base0D}};
     --code-keyword: {{base0E}};
     --code-string: {{base0B}};
+}
+
+@media print {
+  @page {
+    /* margin: 0; */
+    size: auto;
+  }
+
+  .print .markdown-preview-view {
+    -webkit-print-color-adjust: exact;
+    color: #000000; /* Adjust to desired text color */
+  }
+
+  :root,
+  body,
+  .theme-dark,
+  .theme-light,
+  .markdown-rendered,
+  .markdown-preview-view,
+  .print .markdown-preview-view {
+    --text-normal: {{base05}};
+    --text-muted: {{base04}};
+    --text-faint: {{base03}};
+    --background-primary: {{base00}};
+    --background-secondary: {{base01}};
+    --divider-color: {{base02}};
+    --h1-color: {{base0D}};
+    --h2-color: {{base0E}};
+    --h3-color: {{base0A}};
+    --h4-color: {{base0B}};
+    --h5-color: {{base0C}};
+    --h6-color: {{base09}};
+    --link-color: {{base0A}};
+    --link-external-color: {{base0C}};
+    --code-background: {{base01}};
+    --code-normal: {{base0B}};
+  }
+
+  html,
+  body,
+  .markdown-rendered,
+  .markdown-preview-view,
+  .print .markdown-preview-view,
+  .markdown-preview-sizer {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+  }
+
+  /* html, */
+  /* body { */
+  /*   margin: 0 !important; */
+  /*   padding: 0 !important; */
+  /* } */
+
+  /* body { */
+  /*   /* padding: 14mm 16mm !important; */ */
+  /*   box-sizing: border-box !important; */
+  /* } */
+
+  .markdown-preview-view,
+  .print .markdown-preview-view,
+  /* .markdown-preview-sizer { */
+  /*   margin: 0 !important; */
+  /*   padding: 0 !important; */
+  /*   box-sizing: border-box !important; */
+  /*   max-width: none !important; */
+  /* } */
+
+  .markdown-rendered h1,
+  .markdown-preview-view h1,
+  .print .markdown-preview-view h1 {
+    color: var(--h1-color) !important;
+  }
+
+  .markdown-rendered h2,
+  .markdown-preview-view h2,
+  .print .markdown-preview-view h2 {
+    color: var(--h2-color) !important;
+  }
+
+  .markdown-rendered h3,
+  .markdown-preview-view h3,
+  .print .markdown-preview-view h3 {
+    color: var(--h3-color) !important;
+  }
+
+  .markdown-rendered h4,
+  .markdown-preview-view h4,
+  .print .markdown-preview-view h4 {
+    color: var(--h4-color) !important;
+  }
+
+  .markdown-rendered h5,
+  .markdown-preview-view h5,
+  .print .markdown-preview-view h5 {
+    color: var(--h5-color) !important;
+  }
+
+  .markdown-rendered h6,
+  .markdown-preview-view h6,
+  .print .markdown-preview-view h6 {
+    color: var(--h6-color) !important;
+  }
+
+  .markdown-rendered a,
+  .markdown-preview-view a,
+  .print .markdown-preview-view a {
+    color: var(--link-color) !important;
+  }
+
+  .markdown-rendered a.external-link,
+  .markdown-preview-view a.external-link,
+  .print .markdown-preview-view a.external-link {
+    color: var(--link-external-color) !important;
+  }
+
+  .markdown-rendered code,
+  .markdown-preview-view code,
+  .print .markdown-preview-view code {
+    background-color: var(--code-background) !important;
+    color: var(--code-normal) !important;
+  }
+
+  .markdown-rendered pre,
+  .markdown-preview-view pre,
+  .print .markdown-preview-view pre,
+  .markdown-rendered blockquote,
+  .markdown-preview-view blockquote,
+  .print .markdown-preview-view blockquote {
+    background-color: var(--background-secondary) !important;
+  }
+
+  .markdown-rendered blockquote,
+  .markdown-preview-view blockquote,
+  .print .markdown-preview-view blockquote {
+    border-left: 4px solid var(--divider-color) !important;
+    color: var(--text-muted) !important;
+  }
+
+  .markdown-rendered hr,
+  .markdown-preview-view hr,
+  .print .markdown-preview-view hr,
+  .markdown-rendered table,
+  .markdown-rendered th,
+  .markdown-rendered td,
+  .markdown-preview-view table,
+  .markdown-preview-view th,
+  .markdown-preview-view td,
+  .print .markdown-preview-view table,
+  .print .markdown-preview-view th,
+  .print .markdown-preview-view td {
+    border-color: var(--divider-color) !important;
+  }
+
+  .markdown-rendered th,
+  .markdown-preview-view th,
+  .print .markdown-preview-view th {
+    background-color: var(--background-secondary) !important;
+  }
+
+  /* make horizontal line appear as page break when exporting to pdf */
+  hr {
+    visibility: hidden;
+    page-break-before: always;
+  }
 }

@@ -1,25 +1,25 @@
 {
   "main": {
-    "id": "e88d2e0e29d46411",
+    "id": "8201762b7fde7f5d",
     "type": "split",
     "children": [
       {
-        "id": "1778bb6f4866aec9",
+        "id": "a591ef9e306e0a94",
         "type": "tabs",
         "children": [
           {
-            "id": "033444026abedba2",
+            "id": "9a325827a9bec840",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "concepting/DV_Concept_URE21.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "DV_Concept_URE21"
             }
           }
         ]
@@ -28,15 +28,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8e5512f5c7374ed8",
+    "id": "f82a8b3c7215df43",
     "type": "split",
     "children": [
       {
-        "id": "96d4058904b8c3c5",
+        "id": "85b31519072e55de",
         "type": "tabs",
         "children": [
           {
-            "id": "0cae8ef7eff46946",
+            "id": "2870064d2c586492",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,7 +49,7 @@
             }
           },
           {
-            "id": "b3b73c710797351b",
+            "id": "1e89507872721da3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "8f0f57b0eaf9c577",
+            "id": "50bcf22947ab0b27",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -82,15 +82,15 @@
     "width": 300
   },
   "right": {
-    "id": "8bcd95bc661ddefe",
+    "id": "378866cba674ad44",
     "type": "split",
     "children": [
       {
-        "id": "4a1d24fd6caedd48",
+        "id": "3229078b32d7d69a",
         "type": "tabs",
         "children": [
           {
-            "id": "23f60e42a90233a7",
+            "id": "70eb8138175ece4a",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -108,7 +108,7 @@
             }
           },
           {
-            "id": "fadce6b226f204f1",
+            "id": "870b50301ec58502",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -121,7 +121,7 @@
             }
           },
           {
-            "id": "b9a05c62083f6332",
+            "id": "7f55cedda6097730",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,7 +136,7 @@
             }
           },
           {
-            "id": "34a115a6ae48be00",
+            "id": "3e51b340730dcd0d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -150,7 +150,7 @@
             }
           },
           {
-            "id": "72ff1df9f128f245",
+            "id": "76a8d60d918fd634",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -162,21 +162,8 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
-          },
-          {
-            "id": "d770fc25c6482ce1",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "docs/misc/Docker development environment setup and usage guide.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for Docker development environment setup and usage guide"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,54 +182,33 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "033444026abedba2",
+  "active": "9a325827a9bec840",
   "lastOpenFiles": [
-    "install/control_node/share/control_node/launch/__pycache__/rviz.launch.cpython-38.pyc",
-    "install/control_node/share/control_node/launch/__pycache__",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/runtime.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/replay.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/raw.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/ouster_driver_test.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/obs.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/legacy.yaml",
-    "runtime/logging/run_unknown_20/configs/main_config/modes/inspection.yaml",
-    "runtime/logging/run_unknown_20/configs/vehicle/vehicle.yaml",
-    "runtime/logging/run_unknown_20/configs/telemetry_config/telemetry.yaml",
-    "docker/README.md",
-    "docs/docker/Docker development environment setup and usage guide.md",
-    "tools/monitoring/README.md",
-    "src/9_ros/control/control_node/README.md",
-    "docs/index.md",
-    "docs/can/CAN Design document.md",
-    "docs/hardware/DV ECU setup guide.md",
-    "docs/misc/Gitlab CI setup.md",
-    "docs/documentation/Hardware Document Template.md",
-    "docs/documentation/Development Guide Template.md",
-    "docs/documentation/Documentation guide.md",
-    "docs/documentation/Design Document Template.md",
-    "docs/yaml_parser/Yaml Parser Design document.md",
-    "docs/vehicle/Vehicle Design document.md",
-    "docs/track/Track Detection Design document.md",
-    "docs/telemetry/figures/URE_20 DV_Live_Telemetry - Page 1.jpeg",
-    "docs/telemetry/figures/Pasted image 20260205101852.png",
-    "docs/telemetry/Telemetry Design document.md",
-    "docs/control/figures/flowchart_control.png",
-    "docs/control/figures/flowchart_control.md",
-    "docs/control/figures/control_rviz.png",
-    "docs/control/figures/Control_Architecture_draft.png",
-    "docs/control/figures/Control_Architecture_draft.md",
+    "todos.md",
+    "concepting/DV_Concept_URE21.md",
+    "tokens.md",
+    "logbook.pdf",
+    "logbook.md",
+    "URE.md",
+    "URE20_framework_engineer_logbook_Seger.pdf",
+    "output.pdf",
+    "concepting/concepting_main.md",
+    "todos.md~",
+    "logbook_images/2026-05-04-134539_hyprshot.png",
+    "computational_modeling.md",
+    "Meeting_04-28.md",
+    "src/9_ros/sim/gazebosim/CMakeLists.txt~",
+    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/viz.yaml",
+    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/simulation.yaml",
+    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/runtime.yaml",
+    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/replay.yaml",
+    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/raw.yaml",
+    "tools/track_builder/README.md",
+    "src/9_ros/sim/gazebosim/README.md",
+    "src/7_viewer/glviewer.bak/README.md",
+    "docs/sim/Simulation Usage Guide.md",
+    "src/7_viewer/glviewer/README.md",
     "docs/control/figures/ControlNodeArchitectureDraft.png",
-    "docs/system/System module Design document.md",
-    "docs/slam/SLAM Design document.md",
-    "docs/path/Path Finding Design document.md",
-    "docs/ouster/Ouster Design document.md",
-    "docs/imu/IMU Design document.md",
-    "docs/fusion/Fusion Design document.md",
-    "docs/control/Control Design document.md",
-    "control/tools/documents/design/lookahead.png",
-    "control/tools/documents/design/Pipeline Overview.png",
-    "control/docs/control/figures/flowchart_control.png",
-    "control/docs/control/figures/control_rviz.png",
-    "Untitled.canvas"
+    "docs/documentation/Development Guide Template.md"
   ]
 }

@@ -16,27 +16,11 @@ fi
 
 CURRENT_THEME=$(cat "$CURRENT_THEME_DIR/current-theme.txt")
 
-# Find wallpaper directory for current theme
-WALLPAPER_DIR=""
-if [[ -d "$BACKGROUNDS_DIR/$CURRENT_THEME" ]]; then
-    WALLPAPER_DIR="$BACKGROUNDS_DIR/$CURRENT_THEME"
-else
-    # Check for wildcard match
-    for dir in "$BACKGROUNDS_DIR"/*; do
-        [[ ! -d "$dir" ]] && continue
-        dirname=$(basename "$dir")
-        if [[ "$dirname" == *\* ]]; then
-            pattern="${dirname%\*}"
-            if [[ "$CURRENT_THEME" == "$pattern"* ]]; then
-                WALLPAPER_DIR="$dir"
-                break
-            fi
-        fi
-    done
-    # Fall back to default
-    if [[ -z "$WALLPAPER_DIR" && -d "$BACKGROUNDS_DIR/default" ]]; then
-        WALLPAPER_DIR="$BACKGROUNDS_DIR/default"
-    fi
+# Find wallpaper directory for current theme using theme.py (supports wildcards)
+WALLPAPER_DIR=$(python3 "$THEME_SCRIPT" find-wallpaper-dir "$CURRENT_THEME")
+if [[ -z "$WALLPAPER_DIR" || ! -d "$WALLPAPER_DIR" ]]; then
+    echo "Error: No wallpaper directory found for theme: $CURRENT_THEME" >&2
+    exit 1
 fi
 
 if [[ -z "$WALLPAPER_DIR" || ! -d "$WALLPAPER_DIR" ]]; then

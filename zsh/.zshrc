@@ -124,6 +124,7 @@ alias swindowsvm='VBoxManage startvm "WindowsVM"'
 
 alias forcebrightdown='hyprctl hyprsunset gamma -10'
 alias forcebrightup='hyprctl hyprsunset gamma +10'
+alias forcebrightreset='hyprctl hyprsunset gamma 100'
 
 # Kill Hyprland window by clicking
 pew() {
@@ -172,7 +173,7 @@ notcrit(){
 
 alias matlab2025b="~/matlab-docker/matlab.sh 2025b"
 
-alias comp_login="sshpass -p LNYQSWJJvA4= ssh -Y pcp26003@co26.ics.ele.tue.nl"
+alias lab_login="sshpass -p booph4xuTi ssh -Y student@es-pynq079.ics.ele.tue.nl"
 
 alias cdure="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/"
 alias cdureme="cd /run/user/1000/gvfs/smb-share:server=wtbfiler.campus.tue.nl,share=university%20racing/2025\ -\ 2026\ \(URE20\)/01_Tech/07_Autonomous_Systems/AS_02_Framework_Engineer "

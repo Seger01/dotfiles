@@ -1,3 +1,4 @@
+variant: "dark"
 palette:
   base00: "#0C0000"    # custom deep black (added)
   base01: "#140001"    # darkest from your palette

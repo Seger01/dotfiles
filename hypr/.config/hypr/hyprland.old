@@ -158,7 +158,6 @@ animations {
 
 # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
 dwindle {
-    pseudotile = true # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
     preserve_split = true # You probably want this
 }
 
@@ -323,8 +322,8 @@ binde = $mediaMod, N, exec, playerctl next
 binde = $mediaMod, B, exec, playerctl previous # B for brevious
 
 # System volume (PipeWire via wpctl)
-binde = $mediaMod, U, exec, wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 2%-
-binde = $mediaMod, I, exec, wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 2%+
+binde = $mediaMod, U, exec, wpctl set-volume -l 2.0 @DEFAULT_AUDIO_SINK@ 2%-
+binde = $mediaMod, I, exec, wpctl set-volume -l 2.0 @DEFAULT_AUDIO_SINK@ 2%+
 binde = $mediaMod, M, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 ##############################
