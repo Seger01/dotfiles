@@ -254,18 +254,17 @@ class ThemeManager:
         # Parse color definitions
         colors, variant = parse_color_yaml(color_file)
 
-        # Set GNOME color scheme based on variant
-        color_scheme = 'prefer-dark' if variant == 'dark' else 'prefer-light'
+        # Set systemwide GTK dark/light mode preference
         try:
+            gtk_mode = 'prefer-dark' if variant == 'dark' else 'prefer-light'
             subprocess.run(
-                ['gsettings', 'set', 'org.gnome.desktop.interface', 'color-scheme', color_scheme],
-                check=True,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL
+                ['gsettings', 'set', 'org.gnome.desktop.interface',
+                 'color-scheme', gtk_mode],
+                check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
             )
-            print(f"  Set GNOME color scheme: {color_scheme}")
-        except subprocess.CalledProcessError:
-            print("  Warning: Failed to set GNOME color scheme", file=sys.stderr)
+            print(f"  GTK color-scheme set to: {gtk_mode}")
+        except Exception as e:
+            print(f"  Warning: Failed to set GTK color-scheme: {e}", file=sys.stderr)
 
         # Parse config
         apps = self.parse_config()

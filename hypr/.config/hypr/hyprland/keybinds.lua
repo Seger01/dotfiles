@@ -68,6 +68,7 @@ hl.bind("SUPER + S", hl.dsp.exec_cmd("wtype -k down"))
 hl.bind("SUPER + A", hl.dsp.exec_cmd("wtype -k left"))
 hl.bind("SUPER + D", hl.dsp.exec_cmd("wtype -k right"))
 
+
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
     { locked = true, repeating = true })
@@ -99,3 +100,6 @@ hl.bind(mediaMod .. " + B", hl.dsp.exec_cmd("playerctl previous"), { repeating =
 hl.bind(mediaMod .. " + U", hl.dsp.exec_cmd("wpctl set-volume -l 2.0 @DEFAULT_AUDIO_SINK@ 2%-"), { repeating = true })
 hl.bind(mediaMod .. " + I", hl.dsp.exec_cmd("wpctl set-volume -l 2.0 @DEFAULT_AUDIO_SINK@ 2%+"), { repeating = true })
 hl.bind(mediaMod .. " + M", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { repeating = true })
+
+hl.bind(mediaMod .. " + T", hl.dsp.exec_cmd("(pkill potd || true) && (potd &)"), { repeating = false })
+hl.bind(mediaMod .. " + SHIFT + T", hl.dsp.exec_cmd("pkill potd || true"), { repeating = false })

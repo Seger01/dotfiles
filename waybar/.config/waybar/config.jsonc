@@ -14,7 +14,8 @@
         "hyprland/workspaces",
         // "wireplumber",
         "custom/volume",
-        "battery"
+        "battery",
+        "custom/potato"
     ],
     "modules-right": [],
     "hyprland/workspaces": {
@@ -37,6 +38,15 @@
     //     "interval": 2,
     //     "format": "{}% "
     // },
+    "custom/potato": {
+        "interval": 1,
+        "exec": "potctl | awk 'NR>1 {print \"󰄉 \" $3}'",
+        // "exec": "potctl | awk 'NR>1 {print $3}'",
+        "on-click": "potctl -t",
+        "on-click-middle": "potctl -r",
+        "on-click-right": "potctl -s"
+        // "exec": "potd -fN"
+    },
     "battery": {
         "interval": 5,
         "states": {

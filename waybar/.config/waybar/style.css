@@ -72,6 +72,7 @@ window#waybar {
 #memory,
 #wireplumber,
 #custom-volume,
+#custom-potato,
 #custom-power {
     padding-left: 10px;
     padding-right: 6px;
@@ -97,8 +98,11 @@ label:focus {
     color: #FFFFFF;
 }
 
-#custom-volume {
+#custom-potato {
+    color: @base09;
     /* font-size: 20px; */
+}
+#custom-volume {
     color: @base0E;
 }
 
