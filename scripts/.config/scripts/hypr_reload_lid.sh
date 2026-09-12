@@ -45,11 +45,6 @@ get_lid_state() {
   fi
 }
 
-disable_internal_monitor() {
-  echo "→ Disabling internal monitor: ${INTERNAL_MONITOR}"
-  hyprctl keyword "monitor" "${INTERNAL_MONITOR}, disable" >/dev/null 2>&1
-}
-
 # -------- MAIN --------
 
 if ! command -v hyprctl >/dev/null 2>&1; then
@@ -60,23 +55,32 @@ fi
 state=$(get_lid_state)
 echo "Lid state: ${state}"
 
-# If lid is open (or unknown), just do a normal reload and exit.
 if [[ "$state" != "closed" ]]; then
-  echo "Lid is not closed → running plain 'hyprctl reload'."
-  exec hyprctl reload
+  echo "Lid is open → reloading and re-enabling internal monitor."
+
+  hyprctl reload
+  sleep 1
+
+  hyprctl eval "hl.monitor { output = '${INTERNAL_MONITOR}', disabled = false }"
+
+  sleep 1
+
+  pkill -SIGUSR2 waybar 2>/dev/null
+
+  exit 0
 fi
 
-# Lid is closed: reload then enforce internal screen off
-echo "Lid is closed → reloading and forcing internal monitor off."
+# Lid is closed: full reload, then disable internal monitor.
+echo "Lid is closed → reloading and disabling internal monitor."
 
-if ! hyprctl reload; then
-  echo "Hyprland reload failed."
-  exit 1
-fi
-
-# small delay so Hyprland can reapply monitor config
+hyprctl reload
 sleep 1
 
-disable_internal_monitor
+hyprctl eval "hl.monitor { output = '${INTERNAL_MONITOR}', disabled = true }"
+
+sleep 1
+
+# Reload waybar to pick up new monitor layout
+pkill -SIGUSR2 waybar 2>/dev/null
 
 echo "Done."

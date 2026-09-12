@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a591ef9e306e0a94",
+        "id": "50d017231b8a648a",
         "type": "tabs",
         "children": [
           {
-            "id": "9a325827a9bec840",
+            "id": "0087413b05f993e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tokens.md",
+                "file": "logbook.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "tokens"
+              "title": "logbook"
             }
           }
         ]
@@ -42,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -182,35 +184,53 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9a325827a9bec840",
+  "active": "0087413b05f993e7",
   "lastOpenFiles": [
-    "czech params.md",
-    "logbook.md",
-    "ED_MP_doc.md",
-    "tokens.md",
-    "todos.md",
-    "concepting/DV_Concept_URE21.md",
-    "ED_MP_doc.md~",
-    "logbook.pdf",
-    "URE.md",
-    "URE20_framework_engineer_logbook_Seger.pdf",
     "output.pdf",
-    "concepting/concepting_main.md",
-    "todos.md~",
-    "logbook_images/2026-05-04-134539_hyprshot.png",
-    "computational_modeling.md",
-    "Meeting_04-28.md",
-    "src/9_ros/sim/gazebosim/CMakeLists.txt~",
-    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/viz.yaml",
-    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/simulation.yaml",
-    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/runtime.yaml",
-    "runtime/logging/run_unknown_2026_04_26_12_45_49/configs/main_config/modes/replay.yaml",
-    "tools/track_builder/README.md",
-    "src/9_ros/sim/gazebosim/README.md",
-    "src/7_viewer/glviewer.bak/README.md",
-    "docs/sim/Simulation Usage Guide.md",
-    "src/7_viewer/glviewer/README.md",
-    "docs/control/figures/ControlNodeArchitectureDraft.png",
-    "docs/documentation/Development Guide Template.md"
+    "copy.sh~",
+    "logbook.pdf",
+    "logbook.md~",
+    "logbook.md",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/ars_simplified-v2.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/_reference.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/RR.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/RL.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/FR.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/vehicle_model_node/kandc/FL.csv",
+    "runtime/logging/raw_unknown_2026_09_09_15_28_06/configs/main_config/modes/visualization.yaml",
+    "pixi_upgrades/tools/monitoring/timing_plotter/README.md",
+    "pixi_upgrades/tools/track_builder/README.md",
+    "pixi_upgrades/tools/steering_analysis/README.md",
+    "pixi_upgrades/tools/resource_plot/README.md",
+    "pixi_upgrades/tools/monitoring/README.md",
+    "pixi_upgrades/tools/fit_vehicle_model/README.md",
+    "pixi_upgrades/tools/maxon_replay/README.md",
+    "pixi_upgrades/tools/cross-compile/README.md",
+    "pixi_upgrades/tools/control_replay/README.md",
+    "pixi_upgrades/tools/README.md",
+    "pixi_upgrades/src/9_ros/sim/vehicle_model_node/config/kandc/README_lookup_schema.md",
+    "pixi_upgrades/src/9_ros/track/track_detection/docs/integration.md",
+    "pixi_upgrades/src/9_ros/track/track_detection/docs/arch.md",
+    "pixi_upgrades/src/9_ros/system/monitoring/statslog/README.md",
+    "pixi_upgrades/src/9_ros/system/monitoring/analyzer/README.md",
+    "pixi_upgrades/src/9_ros/ouster/ouster_detection/patchworkpp_filter/README.md",
+    "pixi_upgrades/src/9_ros/system/status_register/README.md",
+    "pixi_upgrades/src/9_ros/system/management/README.md",
+    "pixi_upgrades/src/9_ros/system/communicator/README.md",
+    "pixi_upgrades/src/9_ros/telemetry/live_telemetry/README.md",
+    "pixi_upgrades/src/9_ros/sim/gazebosim/README.md",
+    "pixi_upgrades/src/9_ros/ouster/ouster_driver/TODO.md",
+    "pixi_upgrades/src/9_ros/imu/imu_marker/TODO.md",
+    "pixi_upgrades/src/9_ros/control/control_node/README.md",
+    "pixi_upgrades/docs/telemetry/figures/URE_20 DV_Live_Telemetry - Page 1.jpeg",
+    "pixi_upgrades/docs/telemetry/figures/Pasted image 20260205101852.png",
+    "pixi_upgrades/docs/system/trackdrive_lookahead.png",
+    "pixi_upgrades/docs/ouster/figures/perception/sim_cone_eval2.png",
+    "pixi_upgrades/docs/ouster/figures/perception/sim_cone_eval.png",
+    "pixi_upgrades/docs/ouster/figures/perception/rqt_perception.png",
+    "pixi_upgrades/docs/ouster/figures/perception/perception_timings.png",
+    "pixi_upgrades/docs/ouster/figures/perception/ouster_os1.png",
+    "pixi_upgrades/docs/ouster/figures/perception/lookahead_dist.png",
+    "pixi_upgrades/docs/ouster/figures/perception/lidar_layers.png"
   ]
 }

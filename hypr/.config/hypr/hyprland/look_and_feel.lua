@@ -50,13 +50,13 @@ hl.config({
 
 -- -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 -- hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
--- hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1 } } })
+hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1 } } })
 hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
 -- Default springs
 hl.curve("easy", { type = "spring", mass = 1.0, stiffness = 171.2633, dampening = 15.8273644 })
 
-hl.animation({ leaf = "workspaces", enabled = true, speed = 0.50, bezier = "easeOutQuint", style = "fade" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 0.50, bezier = "almostLinear", style = "fade" })
 -- hl.animation({ leaf = "windows", enabled = true, speed = 1.00, bezier = "almostLinear" })
 hl.animation({ leaf = "windows", enabled = true, speed = 1.00, spring = "easy" })
 hl.animation({ leaf = "fade", enabled = true, speed = 0.50, bezier = "quick" })

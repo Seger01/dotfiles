@@ -2,19 +2,19 @@ system: "base16"
 name: "URE"
 variant: "dark"
 palette:
-  base00: "#231a0d"  # ----        (r:2,   g:1,   b:1)   deepest black
-  base01: "#332614"  # ---         (r:33,  g:31,  b:31)  very dark gray-brown
-  base02: "#6a4e29"
-  base03: "#8f6c41"
-  base04: "#b48b59"
-  base05: "#d9a971"
-  base06: "#ffc88a"
-  base07: "#f9f9fe"
-  base08: "#9b4c16"  # red         (r:155, g:76,  b:22)  burnt orange-red
-  base09: "#F28D35"  # orange      (r:177, g:104, b:45)  warm amber
-  base0A: "#4a7a9b"  # aqua/cyan   muted teal-blue (complementary cool)
-  base0B: "#2e4a63"  # blue        dark steel blue (complementary)
-  base0C: "#b16f3e"  # aqua/cyan   (r:177, g:104, b:45)  warm amber (brightest warm)
-  base0D: "#9b4c16"  # blue        (r:155, g:76,  b:22)  mid rust
-  base0E: "#ad6a3e"  # purple      (r:173, g:106, b:62)  copper tan
-  base0F: "#601c06"  # brown       (r:96,  g:28,  b:6)   dark rust anchor
+  base00: "#1d1f23" # ----
+  base01: "#292A2E" # ---
+  base02: "#373E48" # --
+  base03: "#535965" # -
+  base04: "#a7b2c0" # +
+  base05: "#d6dde6" # ++
+  base06: "#eef3f8" # +++
+  base07: "#f8fbff" # ++++
+  base08: "#ff5a1f"
+  base09: "#ff9f2f"
+  base0A: "#5f9fe3"
+  base0B: "#c8b35a"
+  base0C: "#4aa8d8"
+  base0D: "#ee7202" 
+  base0E: "#8bb6ea"
+  base0F: "#b06a74"

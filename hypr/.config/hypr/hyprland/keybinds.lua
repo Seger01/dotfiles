@@ -88,8 +88,8 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- Handling laptop lid
-hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("hyprctl keyword monitor eDP-1, disable"), { locked = true })
-hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprctl keyword monitor eDP-1, 1920x1080, 0x0, 1"),
+hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh"), { locked = true })
+hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh"),
     { locked = true })
 
 -- Media keybinds
