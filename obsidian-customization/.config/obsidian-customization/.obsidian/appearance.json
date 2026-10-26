@@ -3,5 +3,6 @@
   "nativeMenus": true,
   "enabledCssSnippets": [
     "obsidian-minimal-snippet"
-  ]
+  ],
+  "baseFontSizeAction": true
 }

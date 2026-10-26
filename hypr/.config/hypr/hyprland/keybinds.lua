@@ -1,6 +1,6 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Binds/
 local terminal    = "kitty -o allow_remote_control=yes"
-local fileManager = "nautilus"
+local fileManager = "nautilus --new-window"
 local menu        = "wofi --show drun"
 local browser     = "zen-browser"
 
@@ -88,9 +88,8 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- Handling laptop lid
-hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh"), { locked = true })
-hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh"),
-    { locked = true })
+hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh closed"), { locked = true })
+hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("~/.config/scripts/hypr_reload_lid.sh open"), { locked = true })
 
 -- Media keybinds
 local mediaMod = "SUPER"
