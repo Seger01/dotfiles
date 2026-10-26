@@ -24,7 +24,7 @@ def change_icon_colors(hex_color: str, papirus_path: Path) -> bool:
     hex_color = hex_color.lstrip('#')
     
     # Path to the papirus-folders script
-    script_path = Path.home() / '.local/share/icons/papirus-folders.sh'
+    script_path = Path.home() / '.config/scripts/papirus-folders.sh'
     
     if not script_path.exists():
         print(f"Error: papirus-folders.sh not found at {script_path}", file=sys.stderr)

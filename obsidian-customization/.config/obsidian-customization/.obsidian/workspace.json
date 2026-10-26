@@ -1,236 +1,236 @@
 {
-  "main": {
-    "id": "8201762b7fde7f5d",
-    "type": "split",
-    "children": [
-      {
-        "id": "e256ed5f464e261f",
-        "type": "tabs",
+    "main": {
+        "id": "8201762b7fde7f5d",
+        "type": "split",
         "children": [
-          {
-            "id": "142229b1a5d4e8a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Automated Reasoning.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Automated Reasoning"
+            {
+                "id": "e256ed5f464e261f",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "142229b1a5d4e8a3",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "Automated Reasoning.md",
+                                "mode": "preview",
+                                "source": false,
+                                "backlinks": false
+                            },
+                            "icon": "lucide-file",
+                            "title": "tokens"
+                        }
+                    }
+                ]
             }
-          }
-        ]
-      }
-    ],
-    "direction": "vertical"
-  },
-  "left": {
-    "id": "f82a8b3c7215df43",
-    "type": "split",
-    "children": [
-      {
-        "id": "85b31519072e55de",
-        "type": "tabs",
+        ],
+        "direction": "vertical"
+    },
+    "left": {
+        "id": "f82a8b3c7215df43",
+        "type": "split",
         "children": [
-          {
-            "id": "2870064d2c586492",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+            {
+                "id": "85b31519072e55de",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "2870064d2c586492",
+                        "type": "leaf",
+                        "state": {
+                            "type": "file-explorer",
+                            "state": {
+                                "sortOrder": "alphabetical",
+                                "autoReveal": false,
+                                "showSearch": false,
+                                "searchQuery": ""
+                            },
+                            "icon": "lucide-folder-closed",
+                            "title": "Files"
+                        }
+                    },
+                    {
+                        "id": "1e89507872721da3",
+                        "type": "leaf",
+                        "state": {
+                            "type": "search",
+                            "state": {
+                                "query": "",
+                                "matchingCase": false,
+                                "explainSearch": false,
+                                "collapseAll": false,
+                                "extraContext": false,
+                                "sortOrder": "alphabetical"
+                            },
+                            "icon": "lucide-search",
+                            "title": "Search"
+                        }
+                    },
+                    {
+                        "id": "50bcf22947ab0b27",
+                        "type": "leaf",
+                        "state": {
+                            "type": "bookmarks",
+                            "state": {},
+                            "icon": "lucide-bookmark",
+                            "title": "Bookmarks"
+                        }
+                    }
+                ]
             }
-          },
-          {
-            "id": "1e89507872721da3",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "50bcf22947ab0b27",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 358.02668380737305,
-    "collapsed": true
-  },
-  "right": {
-    "id": "378866cba674ad44",
-    "type": "split",
-    "children": [
-      {
-        "id": "3229078b32d7d69a",
-        "type": "tabs",
+        ],
+        "direction": "horizontal",
+        "width": 358.02668380737305,
+        "collapsed": true
+    },
+    "right": {
+        "id": "378866cba674ad44",
+        "type": "split",
         "children": [
-          {
-            "id": "70eb8138175ece4a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
+            {
+                "id": "3229078b32d7d69a",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "70eb8138175ece4a",
+                        "type": "leaf",
+                        "state": {
+                            "type": "backlink",
+                            "state": {
+                                "collapseAll": false,
+                                "extraContext": false,
+                                "sortOrder": "alphabetical",
+                                "showSearch": false,
+                                "searchQuery": "",
+                                "backlinkCollapsed": false,
+                                "unlinkedCollapsed": true
+                            },
+                            "icon": "links-coming-in",
+                            "title": "Backlinks"
+                        }
+                    },
+                    {
+                        "id": "870b50301ec58502",
+                        "type": "leaf",
+                        "state": {
+                            "type": "outgoing-link",
+                            "state": {
+                                "linksCollapsed": false,
+                                "unlinkedCollapsed": true
+                            },
+                            "icon": "links-going-out",
+                            "title": "Outgoing links"
+                        }
+                    },
+                    {
+                        "id": "7f55cedda6097730",
+                        "type": "leaf",
+                        "state": {
+                            "type": "tag",
+                            "state": {
+                                "sortOrder": "frequency",
+                                "useHierarchy": true,
+                                "showSearch": false,
+                                "searchQuery": ""
+                            },
+                            "icon": "lucide-tags",
+                            "title": "Tags"
+                        }
+                    },
+                    {
+                        "id": "3e51b340730dcd0d",
+                        "type": "leaf",
+                        "state": {
+                            "type": "all-properties",
+                            "state": {
+                                "sortOrder": "frequency",
+                                "showSearch": false,
+                                "searchQuery": ""
+                            },
+                            "icon": "lucide-archive",
+                            "title": "All properties"
+                        }
+                    },
+                    {
+                        "id": "76a8d60d918fd634",
+                        "type": "leaf",
+                        "state": {
+                            "type": "outline",
+                            "state": {
+                                "followCursor": false,
+                                "showSearch": false,
+                                "searchQuery": ""
+                            },
+                            "icon": "lucide-list",
+                            "title": "Outline"
+                        }
+                    }
+                ]
             }
-          },
-          {
-            "id": "870b50301ec58502",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "7f55cedda6097730",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "3e51b340730dcd0d",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "76a8d60d918fd634",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
-  },
-  "left-ribbon": {
-    "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false
-    }
-  },
-  "active": "142229b1a5d4e8a3",
-  "lastOpenFiles": [
-    "assets/automated-reasoning-slides/12-model-checking.pdf",
-    "Automated Reasoning.md",
-    "assets/automated-reasoning-assets/L14-skolemization-unsat-final-step-28.png",
-    "assets/automated-reasoning-assets/L14-boring-lecture-refutation-30.png",
-    "assets/automated-reasoning-slides/09-implementation.pdf",
-    "assets/automated-reasoning-slides/10-applications.pdf",
-    "assets/automated-reasoning-slides/11-varorder.pdf",
-    "assets/automated-reasoning-slides/13-predicate-logic.pdf",
-    "assets/automated-reasoning-slides/14-chc-skolemization.pdf",
-    "System Validation.md",
-    "Untitled.md",
-    "tokens.md",
-    "assets/automated-reasoning-slides/08-operations.pdf",
-    "assets/automated-reasoning-slides/07-bdt-bdd.pdf",
-    "assets/automated-reasoning-slides/06-smt.pdf",
-    "file:/home/seger/projects/new_website/docs/data_old_site/pages/cars/mind-of-the-ure17.md",
-    "file:/home/seger/projects/new_website/docs/data_old_site/SITE_STRUCTURE.md",
-    "Automated Reasoning.md.bak",
-    "assets/system-validation/figures/unit1/book-table-4.2-in-scope-axioms.png",
-    "assets/system-validation/figures/unit1/book-fig-4.2-choice-processes.png",
-    "assets/system-validation/figures/unit1/book-fig-4.1-sequential-processes.png",
-    "assets/system-validation/figures/unit1/book-table-4.2-conditional-axioms.png",
-    "assets/system-validation/figures/unit1/book-table-4.2-process-axioms-A1-A5.png",
-    "assets/system-validation/figures/unit1/book-table-4.1-multiaction-axioms.png",
-    "assets/system-validation/figures/unit1/book-exercise-2.4.7-branching-pairs.png",
-    "assets/system-validation/figures/unit1/book-fig-2.12-visible-tau.png",
-    "logbook.md",
-    "concepting/concepting_main.md",
-    "URE.md",
-    "todos.md",
-    "LIDAR_CAMERA_FUSION_IMPLEMENTATION_PLAN.md",
-    "docs/perception/fusion/LiDAR Camera Fusion Frame and Time Audit.md",
-    "tools/README.md",
-    "docs/yaml_parser/Yaml Parser Design document.md",
-    "docs/track/missions/TrackDrive Mission Design document.md",
-    "docs/track/missions/Skidpad Mission Design document.md",
-    "docs/track/missions/Acceleration Mission Design document.md",
-    "docs/track/Track Detection References.md",
-    "docs/track/Track Detection Design document.md",
-    "docs/track/Track Detection Design Justification.md",
-    "docs/telemetry/Telemetry Design document.md",
-    "docs/slam/SLAM Design document.md",
-    "docs/sim/superpowers/specs/2026-06-07-high-fidelity-vehicle-model-design.md",
-    "docs/sim/superpowers/plans/2026-06-09-vehicle-model-phase3-vertical-kandc.md",
-    "docs/sim/superpowers/plans/2026-06-08-vehicle-model-phase3-vertical-kandc.md"
-  ]
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+    },
+    "left-ribbon": {
+        "hiddenItems": {
+            "switcher:Open quick switcher": false,
+            "graph:Open graph view": false,
+            "canvas:Create new canvas": false,
+            "daily-notes:Open today's daily note": false,
+            "templates:Insert template": false,
+            "command-palette:Open command palette": false,
+            "bases:Create new base": false,
+            "obsidian-excalidraw-plugin:New drawing": false
+        }
+    },
+    "active": "142229b1a5d4e8a3",
+    "lastOpenFiles": [
+        "assets/automated-reasoning-slides/12-model-checking.pdf",
+        "Automated Reasoning.md",
+        "assets/automated-reasoning-assets/L14-skolemization-unsat-final-step-28.png",
+        "assets/automated-reasoning-assets/L14-boring-lecture-refutation-30.png",
+        "assets/automated-reasoning-slides/09-implementation.pdf",
+        "assets/automated-reasoning-slides/10-applications.pdf",
+        "assets/automated-reasoning-slides/11-varorder.pdf",
+        "assets/automated-reasoning-slides/13-predicate-logic.pdf",
+        "assets/automated-reasoning-slides/14-chc-skolemization.pdf",
+        "System Validation.md",
+        "Untitled.md",
+        "tokens.md",
+        "assets/automated-reasoning-slides/08-operations.pdf",
+        "assets/automated-reasoning-slides/07-bdt-bdd.pdf",
+        "assets/automated-reasoning-slides/06-smt.pdf",
+        "file:/home/seger/projects/new_website/docs/data_old_site/pages/cars/mind-of-the-ure17.md",
+        "file:/home/seger/projects/new_website/docs/data_old_site/SITE_STRUCTURE.md",
+        "Automated Reasoning.md.bak",
+        "assets/system-validation/figures/unit1/book-table-4.2-in-scope-axioms.png",
+        "assets/system-validation/figures/unit1/book-fig-4.2-choice-processes.png",
+        "assets/system-validation/figures/unit1/book-fig-4.1-sequential-processes.png",
+        "assets/system-validation/figures/unit1/book-table-4.2-conditional-axioms.png",
+        "assets/system-validation/figures/unit1/book-table-4.2-process-axioms-A1-A5.png",
+        "assets/system-validation/figures/unit1/book-table-4.1-multiaction-axioms.png",
+        "assets/system-validation/figures/unit1/book-exercise-2.4.7-branching-pairs.png",
+        "assets/system-validation/figures/unit1/book-fig-2.12-visible-tau.png",
+        "logbook.md",
+        "concepting/concepting_main.md",
+        "URE.md",
+        "todos.md",
+        "LIDAR_CAMERA_FUSION_IMPLEMENTATION_PLAN.md",
+        "docs/perception/fusion/LiDAR Camera Fusion Frame and Time Audit.md",
+        "tools/README.md",
+        "docs/yaml_parser/Yaml Parser Design document.md",
+        "docs/track/missions/TrackDrive Mission Design document.md",
+        "docs/track/missions/Skidpad Mission Design document.md",
+        "docs/track/missions/Acceleration Mission Design document.md",
+        "docs/track/Track Detection References.md",
+        "docs/track/Track Detection Design document.md",
+        "docs/track/Track Detection Design Justification.md",
+        "docs/telemetry/Telemetry Design document.md",
+        "docs/slam/SLAM Design document.md",
+        "docs/sim/superpowers/specs/2026-06-07-high-fidelity-vehicle-model-design.md",
+        "docs/sim/superpowers/plans/2026-06-09-vehicle-model-phase3-vertical-kandc.md",
+        "docs/sim/superpowers/plans/2026-06-08-vehicle-model-phase3-vertical-kandc.md"
+    ]
 }
